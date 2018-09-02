@@ -1,0 +1,3 @@
+[submodule "external/jasmine"]
+	path = external/jasmine
+	url = https://github.com/jasmine/jasmine.git
