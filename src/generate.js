@@ -19,4 +19,10 @@ $(document).ready(function() {
         });
         $('#trainingTextBox').fadeIn('slow');
     });
+
+    $('#printTrainingButton').click(function() {
+        console.log('print button!');
+
+        $('#trainingTextBox').printThis();
+    });
 });
