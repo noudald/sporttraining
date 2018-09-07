@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html>
+
+    <head>
+        <title>Swim trainer</title>
+
+        <link rel="stylesheet" type="text/css" href="src/style.css">
+
+        <script src="src/jquery-3.3.1.min.js"></script>
+        <script src="src/generate.js"></script>
+    </head>
+
     <body>
-        Hello world!
+        <div id="container">
+            <div id="trainingOptions">
+                <div id="attentionPoint">
+                    Choose your attention point: </br>
+                    <input type="radio" name="attentionPoint" value="arms">Arms</input></br>
+                    <input type="radio" name="attentionPoint" value="legs">Legs</input></br>
+                    <input type="radio" name="attentionPoint" value="random">Random</input></br></br>
+                </div>
+
+                <div id="swimTraining">
+                    Choose your type of training: </br>
+                    <input type="radio" name="swimTraining" value="technique">Technique</input></br>
+                    <input type="radio" name="swimTraining" value="threshold">Threshold/CSS</input></br>
+                    <input type="radio" name="swimTraining" value="sprint">Sprint</input></br>
+                    <input type="radio" name="swimTraining" value="openwater">Open Water</input></br>
+                    <input type="radio" name="swimTraining" value="endurance">Endurance</input></br>
+                    <input type="radio" name="swimTraining" value="random">Random</input></br></br>
+                </div>
+
+                <div id="swimSpeed">
+                    Critical swim speed: </br>
+                    <input type="radio" name="swimSpeed" value="novice">Novice (slower than 2:00/100m)</input></br>
+                    <input type="radio" name="swimSpeed" value="intermediate">Intermediate (between 2:00/100m till 1:30/100m)</input></br>
+                    <input type="radio" name="swimSpeed" value="advanced">Advanced (faster than 1:30/100m)</input></br></br>
+                </div>
+            </div>
+
+            <div id="swimTraining">
+                <p id="trainingTextBox" style="display:none">This is your custom training:</p>
+            </div>
+        </div>
     </body>
 </html>
