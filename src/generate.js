@@ -70,6 +70,8 @@ function generateTraining(swimType, swimSpeed) {
 }
 
 $(document).ready(() => {
+  $('#buttonDiv').hide();
+
   $('#swimType, #swimSpeed').click(() => {
     const swimType = $(':radio[name=swimType]:checked').val();
     const swimSpeed = $(':radio[name=swimSpeed]:checked').val();
@@ -80,6 +82,24 @@ $(document).ready(() => {
       $('#trainingTextBox').html(completeTraining);
     });
     $('#trainingTextBox').fadeIn('slow');
+    $('#buttonDiv').fadeIn('slow');
+
+    const trainingTextBox = $('#trainingTextBox');
+    $('html,body').animate(
+      { scrollTop: trainingTextBox.offset().top }, 'slow',
+    );
+  });
+
+  $('#newTrainingButton').click(() => {
+    $('#trainingTextBox').fadeOut('slow');
+    $('#trainingTextBox').promise().done(() => {
+      $('#trainingTextBox').html('');
+    });
+    const trainingOptions = $('#trainingOptions');
+    $('html,body').animate(
+      { scrollTop: trainingOptions.offset().top }, 'slow',
+    );
+    $('#buttonDiv').fadeOut('slow');
   });
 
   $('#printTrainingButton').click(() => {

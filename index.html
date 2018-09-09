@@ -16,6 +16,7 @@
 
     <body>
         <div id="container">
+
             <div id="trainingOptions">
                 <div id="swimType">
                     Choose your type of training: <br>
@@ -29,17 +30,20 @@
 
                 <div id="swimSpeed">
                     Critical swim speed: <br>
-                    <input type="radio" name="swimSpeed" value="novice">Novice (slower than 2:00/100m)<br>
-                    <input type="radio" name="swimSpeed" value="intermediate">Intermediate (between 2:00/100m till 1:30/100m)<br>
-                    <input type="radio" name="swimSpeed" value="advanced">Advanced (faster than 1:30/100m)<br><br>
+                    <input type="radio" name="swimSpeed" value="novice">Novice (CSS slower than 2:00/100m)<br>
+                    <input type="radio" name="swimSpeed" value="intermediate">Intermediate (CSS between 2:00/100m and 1:30/100m)<br>
+                    <input type="radio" name="swimSpeed" value="advanced">Advanced (CSS faster than 1:30/100m)<br><br>
                 </div>
             </div>
 
+
             <div id="swimTraining">
+                <div id="buttonDiv">
+                    <input type='button' id='newTrainingButton' value='New training'>
+                    <input type='button' id='printTrainingButton' value='Print training'>
+                </div>
                 <p id="trainingTextBox" style="display:none">This is your custom training:</p>
             </div>
-
-            <input type='button' id='printTrainingButton' value='Print training'>
         </div>
     </body>
 </html>
