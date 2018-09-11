@@ -16,14 +16,20 @@ function generateTraining(swimType, swimSpeed) {
   let coolingDown = null;
 
   if (swimSpeed) {
-    const data = trainingdb({ training_part: 'warming_up', swim_speed: swimSpeed });
+    const data = trainingdb({
+      training_part: 'warming_up',
+      swim_speed: swimSpeed,
+    });
     const randomInt = getRandomInt(0, data.count() - 1);
     warmingUp = data.get()[randomInt].training_text;
     totalDistance += data.get()[randomInt].distance;
   }
 
   if (swimSpeed) {
-    const data = trainingdb({ training_part: 'build', swim_speed: swimSpeed });
+    const data = trainingdb({
+      training_part: 'build',
+      swim_speed: swimSpeed,
+    });
     const randomInt = getRandomInt(0, data.count() - 1);
     build = data.get()[randomInt].training_text;
     totalDistance += data.get()[randomInt].distance;
@@ -34,7 +40,11 @@ function generateTraining(swimType, swimSpeed) {
     if (swimType === 'random') {
       data = trainingdb({ training_part: 'main', swim_speed: swimSpeed });
     } else {
-      data = trainingdb({ training_part: 'main', swim_speed: swimSpeed, training_type: swimType });
+      data = trainingdb({
+        training_part: 'main',
+        swim_speed: swimSpeed,
+        training_type: swimType,
+      });
     }
     const randomInt = getRandomInt(0, data.count() - 1);
     main = data.get()[randomInt].training_text;
@@ -42,7 +52,10 @@ function generateTraining(swimType, swimSpeed) {
   }
 
   if (swimSpeed) {
-    const data = trainingdb({ training_part: 'cooling_down', swim_speed: swimSpeed });
+    const data = trainingdb({
+      training_part: 'cooling_down',
+      swim_speed: swimSpeed,
+    });
     const randomInt = getRandomInt(0, data.count() - 1);
     coolingDown = data.get()[randomInt].training_text;
     totalDistance += data.get()[randomInt].distance;

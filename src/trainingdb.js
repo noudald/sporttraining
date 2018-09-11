@@ -2,6 +2,8 @@
  * Copyright (c) 2018 Noud Aldenhoven
  */
 
+/* eslint-disable max-len */
+
 const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
   /* All warming-up training schedules. */
   {
@@ -239,3 +241,5 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     distance: 400,
   },
 ]);
+
+/* eslint-enable max-len */
