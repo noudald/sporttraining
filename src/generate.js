@@ -97,6 +97,8 @@ $(document).ready(() => {
     $('#trainingTextBox').promise().done(() => {
       $('#trainingTextBox').html('');
     });
+    $('input[name="swimType"]').prop('checked', false);
+    $('input[name="swimSpeed"]').prop('checked', false);
     const trainingOptions = $('#trainingOptions');
     $('html,body').animate(
       { scrollTop: trainingOptions.offset().top }, 'slow',
