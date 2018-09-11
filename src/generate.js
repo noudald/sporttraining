@@ -85,7 +85,7 @@ $(document).ready(() => {
       $('#trainingTextBox').fadeIn('slow');
       $('#buttonDiv').fadeIn('slow');
 
-      const trainingTextBox = $('#trainingTextBox');
+      const trainingTextBox = $('#swimTraining');
       $('html,body').animate(
         { scrollTop: trainingTextBox.offset().top }, 'slow',
       );
