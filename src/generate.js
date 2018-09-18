@@ -83,6 +83,8 @@ function generateTraining(swimType, swimSpeed) {
 }
 
 $(document).ready(() => {
+  $('#mainTitle').html('Swim training generator');
+
   $('#buttonDiv').hide();
 
   $('#swimType, #swimSpeed').click(() => {
@@ -98,7 +100,7 @@ $(document).ready(() => {
       $('#trainingTextBox').fadeIn('slow');
       $('#buttonDiv').fadeIn('slow');
 
-      const trainingTextBox = $('#swimTraining');
+      const trainingTextBox = $('#sportTraining');
       $('html,body').animate(
         { scrollTop: trainingTextBox.offset().top }, 'slow',
       );
