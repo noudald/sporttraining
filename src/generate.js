@@ -8,42 +8,49 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function generateTraining(swimType, swimSpeed) {
+function generateTraining(swimType, swimSpeed, swimTime) {
   let totalDistance = 0;
   let warmingUp = null;
   let build = null;
   let main = null;
   let coolingDown = null;
 
-  if (swimSpeed) {
+  if (swimSpeed && swimTime) {
     const data = trainingdb({
       training_part: 'warming_up',
       swim_speed: swimSpeed,
+      swim_time: swimTime
     });
     const randomInt = getRandomInt(0, data.count() - 1);
     warmingUp = data.get()[randomInt].training_text;
     totalDistance += data.get()[randomInt].distance;
   }
 
-  if (swimSpeed) {
+  if (swimSpeed && swimTime) {
     const data = trainingdb({
       training_part: 'build',
       swim_speed: swimSpeed,
+      swim_time: swimTime
     });
     const randomInt = getRandomInt(0, data.count() - 1);
     build = data.get()[randomInt].training_text;
     totalDistance += data.get()[randomInt].distance;
   }
 
-  if (swimType && swimSpeed) {
+  if (swimType && swimSpeed && swimTime) {
     let data;
     if (swimType === 'random') {
-      data = trainingdb({ training_part: 'main', swim_speed: swimSpeed });
+      data = trainingdb({
+        training_part: 'main',
+        swim_speed: swimSpeed,
+        swim_time: swimTime
+      });
     } else {
       data = trainingdb({
         training_part: 'main',
         swim_speed: swimSpeed,
         training_type: swimType,
+        swim_time: swimTime
       });
     }
     const randomInt = getRandomInt(0, data.count() - 1);
@@ -55,6 +62,7 @@ function generateTraining(swimType, swimSpeed) {
     const data = trainingdb({
       training_part: 'cooling_down',
       swim_speed: swimSpeed,
+      swim_time: swimTime
     });
     const randomInt = getRandomInt(0, data.count() - 1);
     coolingDown = data.get()[randomInt].training_text;
@@ -87,11 +95,12 @@ $(document).ready(() => {
 
   $('#buttonDiv').hide();
 
-  $('#swimType, #swimSpeed').click(() => {
+  $('#swimType, #swimSpeed, #swimTime').click(() => {
     const swimType = $(':radio[name=swimType]:checked').val();
     const swimSpeed = $(':radio[name=swimSpeed]:checked').val();
-    if (swimType && swimSpeed) {
-      const completeTraining = generateTraining(swimType, swimSpeed);
+    const swimTime = $(':radio[name=swimTime]:checked').val();
+    if (swimType && swimSpeed && swimTime) {
+      const completeTraining = generateTraining(swimType, swimSpeed, swimTime);
 
       $('#trainingTextBox').fadeOut('slow');
       $('#trainingTextBox').promise().done(() => {
@@ -114,6 +123,7 @@ $(document).ready(() => {
     });
     $('input[name="swimType"]').prop('checked', false);
     $('input[name="swimSpeed"]').prop('checked', false);
+    $('input[name="swimTime"]').prop('checked', false);
     const trainingOptions = $('#trainingOptions');
     $('html,body').animate(
       { scrollTop: trainingOptions.offset().top }, 'slow',

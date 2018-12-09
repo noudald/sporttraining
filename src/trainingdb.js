@@ -10,6 +10,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '200m freestyle',
     distance: 200,
   },
@@ -17,6 +18,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '400m freestyle',
     distance: 400,
   },
@@ -24,6 +26,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '2 x 400m freestyle',
     distance: 800,
   },
@@ -31,6 +34,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '50m breaststroke, 50m freestyle, 50m backstroke, 50m freestyle',
     distance: 200,
   },
@@ -38,6 +42,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '100m breaststroke, 100m freestyle, 100m backstroke, 100m freestyle',
     distance: 400,
   },
@@ -45,8 +50,33 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '2 x (100m breaststroke, 100m freestyle, 100m backstroke, 100m freestyle)',
     distance: 800,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '100m freestyle',
+    distance: 100,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '150m freestyle',
+    distance: 150,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '200m freestyle',
+    distance: 200,
   },
 
   /* All build training schedules */
@@ -54,6 +84,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'build',
     training_type: null,
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '4x50m freestyle + R15s - 25m fast holding good form + 25m easy.',
     distance: 200,
   },
@@ -61,6 +92,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'build',
     training_type: null,
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '6x50m freestyle + R15s - 25m fast holding good form + 25m easy.',
     distance: 300,
   },
@@ -68,8 +100,33 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'build',
     training_type: null,
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '8x50m freestyle + R15s - 25m fast holding good form + 25m easy.',
     distance: 400,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4x25m freestyle fast + R15s.',
+    distance: 100,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '6x25m freestyle fast + R15s.',
+    distance: 150,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '8x25m freestyle fast + R15s.',
+    distance: 200,
   },
 
   /* All main training schedules */
@@ -77,6 +134,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'technique',
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '4x200m freestyle with fins + R15s where:</br>'
             + '&nbsp;&nbsp; 100m fins: 25m left kick 25m right kick 50m f/s</br>'
             + '&nbsp;&nbsp; 100m fins: 50m 6/1/6 50m f/s',
@@ -86,6 +144,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'technique',
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '6x200m freestyle with fins + R15s where:</br>'
             + '&nbsp;&nbsp; 100m fins: 25m left kick 25m right kick 50m f/s</br>'
             + '&nbsp;&nbsp; 100m fins: 50m 6/1/6 50m f/s',
@@ -95,6 +154,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'technique',
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '8x200m freestyle with fins + R15s where:</br>'
             + '&nbsp;&nbsp; 100m fins: 25m left kick 25m right kick 50m f/s</br>'
             + '&nbsp;&nbsp; 100m fins: 50m 6/1/6 50m f/s',
@@ -102,8 +162,39 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
   },
   {
     training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4x100m freestyle with fins + R15s where:</br>'
+            + '&nbsp;&nbsp; 50m fins: 25m left kick 25m right kick 50m f/s</br>'
+            + '&nbsp;&nbsp; 50m fins: 50m 6/1/6 50m f/s',
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '6x100m freestyle with fins + R15s where:</br>'
+            + '&nbsp;&nbsp; 50m fins: 25m left kick 25m right kick 50m f/s</br>'
+            + '&nbsp;&nbsp; 50m fins: 50m 6/1/6 50m f/s',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '8x100m freestyle with fins + R15s where:</br>'
+            + '&nbsp;&nbsp; 50m fins: 25m left kick 25m right kick 50m f/s</br>'
+            + '&nbsp;&nbsp; 50m fins: 50m 6/1/6 50m f/s',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
     training_type: 'threshold',
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '100-200-300-300-200-100 freestyle at CSS + R30s',
     distance: 1000,
   },
@@ -111,6 +202,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'threshold',
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '100-200-300-400-300-200-100 freestyle at CSS + R30s',
     distance: 1400,
   },
@@ -118,20 +210,39 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'threshold',
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '100-200-300-400-400-300-200-100 freestyle at CSS + R30s',
     distance: 1800,
   },
   {
     training_part: 'main',
     training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '50-100-150-150-100-50 freestyle at CSS + R15s',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '50-100-150-200-150-100-50 freestyle at CSS + R15s',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
     swim_speed: 'advanced',
-    training_text: '100-200-300-400-400-300-200-100 freestyle at CSS + R30s',
-    distance: 1800,
+    swim_time: '30',
+    training_text: '50-100-150-200-200-150-100-50 freestyle at CSS + R15s',
+    distance: 1000,
   },
   {
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '15x50m freestyle + R30s: 25m fast + 25m easy',
     distance: 750,
   },
@@ -139,6 +250,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '20x50m freestyle + R30s: 25m fast + 25m easy',
     distance: 1000,
   },
@@ -146,13 +258,39 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '25x50m freestyle + R30s: 25m fast + 25m easy',
     distance: 1250,
   },
   {
     training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '8x50m freestyle + R30s: 25m fast + 25m easy',
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '10x50m freestyle + R30s: 25m fast + 25m easy',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '12x50m freestyle + R30s: 25m fast + 25m easy',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
     training_type: 'openwater',
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '4x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
             + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
             + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
@@ -164,6 +302,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'openwater',
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '6x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
             + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
             + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
@@ -177,6 +316,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'openwater',
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '2x4x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
             + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
             + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
@@ -186,8 +326,47 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
   },
   {
     training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4x150m freestyle + R30s if possible drafting steadily with a partner where:<br>'
+            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
+            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
+            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
+            + '&nbsp;&nbsp; 4e normale freestyle',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '6x150m freestyle + R30s if possible drafting steadily with a partner where:<br>'
+            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
+            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
+            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
+            + '&nbsp;&nbsp; 4e normale freestyle<br>'
+            + '&nbsp;&nbsp; 5e with fins, long and smooth<br>'
+            + '&nbsp;&nbsp; 6e with fins and head-up sighting ever 9 strokes<br>',
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '4x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
+            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
+            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
+            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
+            + '&nbsp;&nbsp; 4e normale freestyle',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
     training_type: 'endurance',
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: 'Freestyle, all at CSS+5s + R20s</br>'
             + '&nbsp;&nbsp; 10x50m</br>'
             + '&nbsp;&nbsp; 5x100m</br>'
@@ -199,6 +378,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'endurance',
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: 'Freestyle, all at CSS+5s + R20s</br>'
             + '&nbsp;&nbsp; 15x50m</br>'
             + '&nbsp;&nbsp; 10x100m</br>'
@@ -210,6 +390,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'main',
     training_type: 'endurance',
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: 'Freestyle, all at CSS+5s + R20s</br>'
             + '&nbsp;&nbsp; 20x50m</br>'
             + '&nbsp;&nbsp; 10x100m</br>'
@@ -217,12 +398,49 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
             + '&nbsp;&nbsp; 2x500m</br>',
     distance: 4000,
   },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
+            + '&nbsp;&nbsp; 4x50m</br>'
+            + '&nbsp;&nbsp; 3x100m</br>'
+            + '&nbsp;&nbsp; 2x150m</br>'
+            + '&nbsp;&nbsp; 200m</br>',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
+            + '&nbsp;&nbsp; 6x50m</br>'
+            + '&nbsp;&nbsp; 4x100m</br>'
+            + '&nbsp;&nbsp; 2x200m</br>'
+            + '&nbsp;&nbsp; 300m</br>',
+    distance: 1500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
+            + '&nbsp;&nbsp; 8x50m</br>'
+            + '&nbsp;&nbsp; 4x100m</br>'
+            + '&nbsp;&nbsp; 2x200m</br>'
+            + '&nbsp;&nbsp; 500m</br>',
+    distance: 1700,
+  },
 
   /* All cooling down schedules */
   {
     training_part: 'cooling_down',
     training_type: null,
     swim_speed: 'novice',
+    swim_time: '60',
     training_text: '200m freestyle',
     distance: 200,
   },
@@ -230,6 +448,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'cooling_down',
     training_type: null,
     swim_speed: 'intermediate',
+    swim_time: '60',
     training_text: '300m freestyle',
     distance: 300,
   },
@@ -237,8 +456,33 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_part: 'cooling_down',
     training_type: null,
     swim_speed: 'advanced',
+    swim_time: '60',
     training_text: '400m freestyle',
     distance: 400,
+  },
+  {
+    training_part: 'cooling_down',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '100m freestyle',
+    distance: 100,
+  },
+  {
+    training_part: 'cooling_down',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '100m freestyle',
+    distance: 100,
+  },
+  {
+    training_part: 'cooling_down',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '100m freestyle',
+    distance: 100,
   },
 ]);
 
