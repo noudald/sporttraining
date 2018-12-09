@@ -19,7 +19,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     const data = trainingdb({
       training_part: 'warming_up',
       swim_speed: swimSpeed,
-      swim_time: swimTime
+      swim_time: swimTime,
     });
     const randomInt = getRandomInt(0, data.count() - 1);
     warmingUp = data.get()[randomInt].training_text;
@@ -30,7 +30,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     const data = trainingdb({
       training_part: 'build',
       swim_speed: swimSpeed,
-      swim_time: swimTime
+      swim_time: swimTime,
     });
     const randomInt = getRandomInt(0, data.count() - 1);
     build = data.get()[randomInt].training_text;
@@ -43,14 +43,14 @@ function generateTraining(swimType, swimSpeed, swimTime) {
       data = trainingdb({
         training_part: 'main',
         swim_speed: swimSpeed,
-        swim_time: swimTime
+        swim_time: swimTime,
       });
     } else {
       data = trainingdb({
         training_part: 'main',
         swim_speed: swimSpeed,
         training_type: swimType,
-        swim_time: swimTime
+        swim_time: swimTime,
       });
     }
     const randomInt = getRandomInt(0, data.count() - 1);
@@ -62,7 +62,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     const data = trainingdb({
       training_part: 'cooling_down',
       swim_speed: swimSpeed,
-      swim_time: swimTime
+      swim_time: swimTime,
     });
     const randomInt = getRandomInt(0, data.count() - 1);
     coolingDown = data.get()[randomInt].training_text;
