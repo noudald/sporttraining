@@ -6,76 +6,273 @@
 
 const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
   /* All warming-up training schedules. */
+
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: '200m freestyle',
+    training_text: '200m with fins, &uarr; broken arrow &darr; f/s steady + R15s<br>'
+                + '100m easy f/s - nice and smooth',
+    distance: 300,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '300m with pull buoy - focus on good roll + R20s<br>'
+      + '200m with fins, &uarr; broken arrow &darr; f/s steady + R15s<br>'
+      + '100m easy f/s - nice and smooth',
+    distance: 600,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '400m easy f/s, focus on smooth exhalation and bilateral breathing + R30s<br>'
+      + '300m with pull buoy - focus on good roll + R20s<br>'
+      + '200m with fins &uarr; broken arrow &darr; f/s steady + R15s<br>'
+      + '100m easy f/s - nice and smooth',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '200m with fins, long, smooth strokes, breathing easily + R20s<br>'
+      + '2 x 100m fins &uarr; 6/1/6 &darr; f/s + R15s',
+    distance: 400,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2x set: 200m with fins, long, smooth strokes, breathing easily + R20s<br>'
+      +'&nbsp;&nbsp; 2 x 100m fins &uarr; 6/1/6 &darr; f/s + R15s',
+    distance: 800,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2x set: 200m with fins, long, smooth strokes, breathing easily + R20s<br>'
+      + '&nbsp;&nbsp; 2 x 100m with fins &uarr; 6/1/6 &darr; f/s + R15s<br>'
+      + '&nbsp;&nbsp; 2 x 50m easy f/s - nice and relaxed + R10s',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '100m easy f/s + R10s<br>'
+      + '2 x 50m with pull buoy - focus on catch + R10s<br>'
+      + '4 x 25m f/s as odd numbers fast and even numbers easy + R5s',
+    distance: 300,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: 'set 1: 100m easy f/s + R10s<br>'
+      + '&nbsp;&nbsp; 2 x 50m with pull buoy - focus on catch + R10s<br>'
+      + '&nbsp;&nbsp; 4 x 25m f/s as odd# fast and even# easy + R5s<br>'
+      + 'set 2: f/s fins breathing each 5 strokes + R10s<br>'
+      + '&nbsp;&nbsp; 2 x 50m torpedo kick, alternating front and back + R10s<br>'
+      + '&nbsp;&nbsp; 4 x 25m, where breath each 1) 3 strokes 2) 5 strokes 3) 7 strokes 4) 3 strokes + R5',
+    distance: 600,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: 'set 1: 100m easy f/s + R10s<br>'
+      + '&nbsp;&nbsp; 2 x 50m with pull buoy - focus on catch + R10s<br>'
+      + '&nbsp;&nbsp; 4 x 25m f/s as odd# fast and even# easy + R5s<br>'
+      + 'set 2: f/s fins breathing each 5 strokes + R10s<br>'
+      + '&nbsp;&nbsp; 2 x 50m torpedo kick, alternating front and back + R10s<br>'
+      + '&nbsp;&nbsp; 4 x 25m, where breath each 1) 3 strokes 2) 5 strokes 3) 7 strokes 4) 3 strokes + R5<br>'
+      + 'set 3: 100m f/s, nice and smooth + R10s<br>'
+      + '&nbsp;&nbsp; 2 x 50m with fins, as 25m shoulder tap, 25m f/s + R10s<br>'
+      + '&nbsp;&nbsp; 4 x 25m f/s swim progressively faster + R5',
+    distance: 900,
+  },
+
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 x 200m + R20s<br>'
+      + '&nbsp;&nbsp; 1e set: f/s breathing 25m left + 25m right + 50m normal<br>'
+      + '&nbsp;&nbsp; 2e set: f/s with fins &uarr; 6/1/6 &darr; f/s',
+    distance: 400,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '3 x 200m + R20s<br>'
+      + '&nbsp;&nbsp; 1e set: f/s breathing 25m left + 25m right + 50m normal<br>'
+      + '&nbsp;&nbsp; 2e set: fins &uarr; 6/1/6 &darr f/s<br>'
+      + '&nbsp;&nbsp; 3e set: f/s breathing 25m left + 25m right + 50m normal',
+    distance: 600,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '5 x 200m + R20s<br>'
+      + '&nbsp;&nbsp; 1e set: f/s breathing 25m left + 25m right + 50m normal<br>'
+      + '&nbsp;&nbsp; 2e set: fins &uarr; 6/1/6 &darr; f/s'
+      + '&nbsp;&nbsp; 3e set: f/s breathing 25m left + 25m right + 50m normal<br>'
+      + '&nbsp;&nbsp; 4e set: with pull buoy as 15m scull#1 + 85m f/s<br>'
+      + '&nbsp;&nbsp; 5e set: f/s easy - nice and relaxed',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '300m f/s, focus on exhalation and a fluid stroke. Try to hold a reasonable consistend pace',
+    distance: 300,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '500m f/s, focus on exhalation and a fluid stroke. Try to hold a reasonable consistend pace',
+    distance: 500,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2 x 500m f/s + R30s<br>'
+      + '&nbsp;&nbsp; 1e set: focus on exhalation and a fluid stroke. Try to hold a reasonable consistend pace<br>'
+      + '&nbsp;&nbsp; 2e set: 200m with pull buoy and band, 100m only band, 200m with pull bouy and band',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '200m f/s easy - breathing bilateral + R15s<br>'
+      +'200m with pull buoy, alternate breathing side each 25m + R15s',
+    distance: 400,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '200m f/s easy - breathing bilateral + R15s<br>'
+      + '200m with pull buoy, alternate breathing side each 25m + R15s<br>'
+      + '200m with fins, as 25m left Unco, 25m f/s, 25m right Unco, 25m f/s + R15s',
+    distance: 600,
+  },
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '200m f/s easy - breathing bilateral + R15s<br>'
+      + '200m with pull buoy, alternate breathing side per 25m + R15s<br>'
+      + '200m with fins, as  25m left Unco, 25m f/s, 25m right Unco, 25m f/s<br>'
+      + '200m with pull buoy, alternate breathing sides each 25m<br>'
+      + '200m f/s easy - breathing bilateral',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'warming_up',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4 x 50m f/s easy',
     distance: 200,
   },
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'intermediate',
-    swim_time: '60',
-    training_text: '400m freestyle',
-    distance: 400,
+    swim_time: '30',
+    training_text: '200m f/s easy',
+    distance: 200,
   },
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'advanced',
-    swim_time: '60',
-    training_text: '2 x 400m freestyle',
-    distance: 800,
+    swim_time: '30',
+    training_text: '200m f/s easy',
+    distance: 200,
   },
+
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'novice',
-    swim_time: '60',
-    training_text: '50m breaststroke, 50m freestyle, 50m backstroke, 50m freestyle',
+    swim_time: '30',
+    training_text: '4 x 50m, as 25m breast easy, 25m f/s easy',
     distance: 200,
   },
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'intermediate',
-    swim_time: '60',
-    training_text: '100m breaststroke, 100m freestyle, 100m backstroke, 100m freestyle',
-    distance: 400,
+    swim_time: '30',
+    training_text: '100m f/s, 100m backstroke',
+    distance: 200,
   },
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'advanced',
-    swim_time: '60',
-    training_text: '2 x (100m breaststroke, 100m freestyle, 100m backstroke, 100m freestyle)',
-    distance: 800,
+    swim_time: '30',
+    training_text: '100m f/s, 100m backstroke',
+    distance: 200,
   },
+
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'novice',
     swim_time: '30',
-    training_text: '100m freestyle',
-    distance: 100,
+    training_text: '4 x 50m f/s easy, sing down before every 50m',
+    distance: 200,
   },
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'intermediate',
     swim_time: '30',
-    training_text: '150m freestyle',
-    distance: 150,
+    training_text: '200m f/s easy, sing down before every 50m',
+    distance: 200,
   },
   {
     training_part: 'warming_up',
     training_type: null,
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: '200m freestyle',
+    training_text: '200m f/s easy, sing down before every 50m',
     distance: 200,
   },
 
