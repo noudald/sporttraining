@@ -491,7 +491,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: null,
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: '3 x 200m freestyle + R20s<br>'
+    training_text: '3 x 200m freestyle + R20s, where:<br>'
       + '&nbsp;&nbsp; 50m fast and smooth<br>'
       + '&nbsp;&nbsp; 100m cruise at moderate intensity<br>'
       + '&nbsp;&nbsp; 50m increase speed and finish strong',
@@ -555,9 +555,11 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'technique',
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: '4x200m freestyle with fins + R15s where:</br>'
-            + '&nbsp;&nbsp; 100m fins: 25m left kick 25m right kick 50m f/s</br>'
-            + '&nbsp;&nbsp; 100m fins: 50m 6/1/6 50m f/s',
+    training_text: '4 x 200m + R20s, where:<br>'
+      + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr freestyle<br>'
+      + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr freestyle<br>'
+      + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 800,
   },
   {
@@ -565,29 +567,35 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'technique',
     swim_speed: 'intermediate',
     swim_time: '60',
-    training_text: '6x200m freestyle with fins + R15s where:</br>'
-            + '&nbsp;&nbsp; 100m fins: 25m left kick 25m right kick 50m f/s</br>'
-            + '&nbsp;&nbsp; 100m fins: 50m 6/1/6 50m f/s',
-    distance: 1200,
+    training_text: '2 x (4 x 200m + R20s), where:<br>'
+      + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr freestyle<br>'
+      + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr freestyle<br>'
+      + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
+    distance: 1600,
   },
   {
     training_part: 'main',
     training_type: 'technique',
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: '8x200m freestyle with fins + R15s where:</br>'
-            + '&nbsp;&nbsp; 100m fins: 25m left kick 25m right kick 50m f/s</br>'
-            + '&nbsp;&nbsp; 100m fins: 50m 6/1/6 50m f/s',
-    distance: 1600,
+    training_text: '3 x (4 x 200m + R20s), where:<br>'
+      + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr freestyle<br>'
+      + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr freestyle<br>'
+      + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
+    distance: 2400,
   },
   {
     training_part: 'main',
     training_type: 'technique',
     swim_speed: 'novice',
     swim_time: '30',
-    training_text: '4x100m freestyle with fins + R15s where:</br>'
-            + '&nbsp;&nbsp; 50m fins: 25m left kick 25m right kick 50m f/s</br>'
-            + '&nbsp;&nbsp; 50m fins: 50m 6/1/6 50m f/s',
+    training_text: '4 x 100m + R20s, where:<br>'
+      + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr freestyle<br>'
+      + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr freestyle<br>'
+      + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 400,
   },
   {
@@ -595,9 +603,74 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'technique',
     swim_speed: 'intermediate',
     swim_time: '30',
-    training_text: '6x100m freestyle with fins + R15s where:</br>'
-            + '&nbsp;&nbsp; 50m fins: 25m left kick 25m right kick 50m f/s</br>'
-            + '&nbsp;&nbsp; 50m fins: 50m 6/1/6 50m f/s',
+    training_text: '2 x (4 x 100m + R20s), where:<br>'
+      + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr freestyle<br>'
+      + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr freestyle<br>'
+      + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '3 x (4 x 200m + R20s), where:<br>'
+      + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr freestyle<br>'
+      + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr freestyle<br>'
+      + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
+    distance: 1200,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '3 x 200m + R15s, where:<br>'
+      + ' &nbsp;&nbsp; 100m fins: 25m left side kick, 25m right side kick, 50m freestyle<br>'
+      + ' &nbsp;&nbsp; 100m fins: 50m 6/1/6, 50m freestyle',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '5 x 200m + R15s, where:<br>'
+      + ' &nbsp;&nbsp; 100m fins: 25m left side kick, 25m right side kick, 50m freestyle<br>'
+      + ' &nbsp;&nbsp; 100m fins: 50m 6/1/6, 50m freestyle',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '7 x 200m + R15s, where:<br>'
+      + ' &nbsp;&nbsp; 100m fins: 25m left side kick, 25m right side kick, 50m freestyle<br>'
+      + ' &nbsp;&nbsp; 100m fins: 50m 6/1/6, 50m freestyle',
+    distance: 1400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '2 x 200m + R15s, where:<br>'
+      + ' &nbsp;&nbsp; 100m fins: 25m left side kick, 25m right side kick, 50m freestyle<br>'
+      + ' &nbsp;&nbsp; 100m fins: 50m 6/1/6, 50m freestyle',
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '3 x 200m + R15s, where:<br>'
+      + ' &nbsp;&nbsp; 100m fins: 25m left side kick, 25m right side kick, 50m freestyle<br>'
+      + ' &nbsp;&nbsp; 100m fins: 50m 6/1/6, 50m freestyle',
     distance: 600,
   },
   {
@@ -605,11 +678,280 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'technique',
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: '8x100m freestyle with fins + R15s where:</br>'
-            + '&nbsp;&nbsp; 50m fins: 25m left kick 25m right kick 50m f/s</br>'
-            + '&nbsp;&nbsp; 50m fins: 50m 6/1/6 50m f/s',
+    training_text: '4 x 200m + R15s, where:<br>'
+      + ' &nbsp;&nbsp; 100m fins: 25m left side kick, 25m right side kick, 50m freestyle<br>'
+      + ' &nbsp;&nbsp; 100m fins: 50m 6/1/6, 50m freestyle',
     distance: 800,
   },
+
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '4 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + ' &nbsp;&nbsp; 25m kick (use pull buoy as kick board)<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + '4 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m breathing every 3 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing 5 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing at least favourite side',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '6 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + ' &nbsp;&nbsp; 25m kick (use pull buoy as kick board)<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + '6 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m breathing every 3 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing 5 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing at least favourite side',
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '8 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + ' &nbsp;&nbsp; 25m kick (use pull buoy as kick board)<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + '8 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m breathing every 3 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing 5 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing at least favourite side',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '2 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + ' &nbsp;&nbsp; 25m kick (use pull buoy as kick board)<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + '2 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m breathing every 3 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing 5 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing at least favourite side',
+    distance: 300,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '3 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + ' &nbsp;&nbsp; 25m kick (use pull buoy as kick board)<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + '3 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m breathing every 3 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing 5 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing at least favourite side',
+    distance: 450,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '4 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + ' &nbsp;&nbsp; 25m kick (use pull buoy as kick board)<br>'
+      + ' &nbsp;&nbsp; 25m with pull buoy<br>'
+      + '4 x 75m + R10s, where:<br>'
+      + ' &nbsp;&nbsp; 25m breathing every 3 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing 5 strokes<br>'
+      + ' &nbsp;&nbsp; 25m breathing at least favourite side',
+    distance: 600,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '3 x (5 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
+      + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
+    distance: 750,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '3 x (7 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
+      + '&nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + '&nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
+      + '&nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
+    distance: 1050,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '3 x (10 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
+      + '&nbsp;&nbsp;1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + '&nbsp;&nbsp;2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
+      + '&nbsp;&nbsp;3th set: 10m scull#1, 10m scull#2, 30m freestyle',
+    distance: 1500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '3 x (3 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
+      + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
+    distance: 450,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '3 x (4 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
+      + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '3 x (5 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
+      + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
+    distance: 750,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '6 x 150m + R20s - Focus on stoke rate, where:<br>'
+      + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
+      + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
+      + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
+      + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM'
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '6 x 200m + R20s - Focus on stoke rate, where:<br>'
+      + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
+      + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
+      + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
+      + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM'
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '6 x 250m + R20s - Focus on stoke rate, where:<br>'
+      + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
+      + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
+      + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
+      + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM'
+    distance: 1500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4 x 100m + R20s - Focus on stoke rate, where:<br>'
+      + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
+      + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
+      + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
+      + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM'
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '6 x 100m + R20s - Focus on stoke rate, where:<br>'
+      + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
+      + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
+      + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
+      + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM'
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '4 x 200m + R20s - Focus on stoke rate, where:<br>'
+      + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
+      + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
+      + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
+      + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM'
+    distance: 800,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '500m + R30s, shoulder tap drill, where:<br>'
+      + '&nbsp;&nbsp; 25m drill, 25m freestyle<br>'
+      + '&nbsp;&nbsp; 50m drill, 50m freestyle<br>'
+      +' &nbsp;&nbsp; 75m drill, 75m freestyle<br>'
+      + '&nbsp;&nbsp; 100m drill, 100m freestyle',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2 x 500m + R30s, shoulder tap drill, where:<br>'
+      + '&nbsp;&nbsp; 25m drill, 25m freestyle<br>'
+      + '&nbsp;&nbsp; 50m drill, 50m freestyle<br>'
+      +' &nbsp;&nbsp; 75m drill, 75m freestyle<br>'
+      + '&nbsp;&nbsp; 100m drill, 100m freestyle',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'technique',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '3 x 500m + R30s, shoulder tap drill, where:<br>'
+      + '&nbsp;&nbsp; 25m drill, 25m freestyle<br>'
+      + '&nbsp;&nbsp; 50m drill, 50m freestyle<br>'
+      +' &nbsp;&nbsp; 75m drill, 75m freestyle<br>'
+      + '&nbsp;&nbsp; 100m drill, 100m freestyle',
+    distance: 1500,
+  },
+
   {
     training_part: 'main',
     training_type: 'threshold',
