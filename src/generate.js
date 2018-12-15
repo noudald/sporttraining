@@ -26,7 +26,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     totalDistance += data.get()[randomInt].distance;
   }
 
-  if (swimSpeed && swimTime) {
+  if (swimSpeed && swimTime && (swimSpeed != 'novice')) {
     const data = trainingdb({
       training_part: 'build',
       swim_speed: swimSpeed,

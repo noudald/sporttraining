@@ -282,7 +282,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: null,
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: '4x50m freestyle + R15s - 25m fast holding good form + 25m easy.',
+    training_text: '4 x 50m freestyle + R15s - 25m fast holding good form + 25m easy',
     distance: 200,
   },
   {
@@ -290,7 +290,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: null,
     swim_speed: 'intermediate',
     swim_time: '60',
-    training_text: '6x50m freestyle + R15s - 25m fast holding good form + 25m easy.',
+    training_text: '6 x 50m freestyle + R15s - 25m fast holding good form + 25m easy',
     distance: 300,
   },
   {
@@ -298,31 +298,254 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: null,
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: '8x50m freestyle + R15s - 25m fast holding good form + 25m easy.',
+    training_text: '8 x 50m freestyle + R15s - 25m fast holding good form + 25m easy',
     distance: 400,
   },
+
   {
     training_part: 'build',
     training_type: null,
     swim_speed: 'novice',
-    swim_time: '30',
-    training_text: '4x25m freestyle fast + R15s.',
+    swim_time: '60',
+    training_text: '4 x 50m freestyle + R15s - every 50m a little bit faster',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '6 x 50m freestyle + R15s - every 50m a little bit faster',
+    distance: 300,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2 x (4 x 50m freestyle + R15s - every 50m a little bit faster)',
+    distance: 400,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '4 x 50m freestyle + R20s - each 50m accelerate from an easy to a fast pace',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '4 x 50m freestyle + R20s - each 50m accelerate from an easy to a fast pace<br>'
+      + '100m freestyle easy + R20s',
+    distance: 300,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '4 x 50m freestyle + R20s - each 50m accelerate from an easy to a fast pace<br>'
+      + '100m backstroke + R20s<br>'
+      + '100m breaststroke + R20s',
+    distance: 400,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '4 x 50m freestyle + R20s - tempo until you have to take a breathe',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '6 x 50m freestyle + R20s - tempo until you have to take a breathe',
+    distance: 300,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '6 x 50m freestyle + R20s - tempo until you have to take a breathe<br>'
+      + '100m backstroke',
+    distance: 400,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 x 50m freestyle + R20s - alternate: 10 fast strokes, 10 easy long strokes, breath easy!',
     distance: 100,
   },
   {
     training_part: 'build',
     training_type: null,
     swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '4 x 50m freestyle + R20s - alternate: 10 fast strokes, 10 easy long strokes, breath easy!',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '4 x 75m freestyle + R20s - alternate: 10 fast strokes, 10 easy long strokes, breath easy!',
+    distance: 300,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'beginner',
+    swim_time: '60',
+    training_text: '2 x 50m as 25m backstroke + 25m breaststroke, 25m breaststoke + 25m freestyle',
+    distance: 100,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '4 x 50m as<br>'
+      + '&nbsp;&nbsp; 25m butterfly + 25m back<br>'
+      + '&nbsp;&nbsp; 25m back + 25m breast<br>'
+      + '&nbsp;&nbsp; 25m breast + 25m free<br>'
+      + '&nbsp;&nbsp; 25m free + 25m butterfly<br>',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2 x (4 x 50m) as<br>'
+      + '&nbsp;&nbsp; 25m butterfly + 25m back<br>'
+      + '&nbsp;&nbsp; 25m back + 25m breast<br>'
+      + '&nbsp;&nbsp; 25m breast + 25m free<br>'
+      + '&nbsp;&nbsp; 25m free + 25m butterfly<br>',
+    distance: 400,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '6 x 50m with pull buoy + R10s - 15m scull#1, 10m doggy paddle, 10m fast, 15m easy',
+    distance: 300,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '8 x 50m with pull buoy + R10s - 15m scull#1, 10m doggy paddle, 10m fast, 15m easy',
+    distance: 400,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '10 x 50m with pull buoy + R10s - 15m scull#1, 10m doggy paddle, 10m fast, 15m easy',
+    distance: 500,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '200m freestyle + R20s<br>'
+      + '&nbsp;&nbsp; 50m fast and smooth<br>'
+      + '&nbsp;&nbsp; 100m cruise at moderate intensity<br>'
+      + '&nbsp;&nbsp; 50m increase speed and finish strong',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2 x 200m freestyle + R20s<br>'
+      + '&nbsp;&nbsp; 50m fast and smooth<br>'
+      + '&nbsp;&nbsp; 100m cruise at moderate intensity<br>'
+      + '&nbsp;&nbsp; 50m increase speed and finish strong',
+    distance: 400,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '3 x 200m freestyle + R20s<br>'
+      + '&nbsp;&nbsp; 50m fast and smooth<br>'
+      + '&nbsp;&nbsp; 100m cruise at moderate intensity<br>'
+      + '&nbsp;&nbsp; 50m increase speed and finish strong',
+    distance: 600,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
     swim_time: '30',
-    training_text: '6x25m freestyle fast + R15s.',
-    distance: 150,
+    training_text: '4x50m freestyle + R20s - sprint until you have to take a breathe',
+    distance: 200,
   },
   {
     training_part: 'build',
     training_type: null,
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: '8x25m freestyle fast + R15s.',
+    training_text: '4x50m freestyle + R20s - sprint until you have to take a breathe',
+    distance: 200,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '4x50m freestyle + R15s - 25m fast, 25m easy',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '4x50m freestyle + R15s - 25m fast, 25m easy',
+    distance: 200,
+  },
+
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '4x50m freestyle + R20s - accelerate from slow to fast pace',
+    distance: 200,
+  },
+  {
+    training_part: 'build',
+    training_type: null,
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '4x50m freestyle + R20s - accelerate from slow to fast pace',
     distance: 200,
   },
 
