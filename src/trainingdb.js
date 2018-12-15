@@ -1197,6 +1197,79 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     distance: 1700,
   },
 
+  {
+    training_part: 'main',
+    training_type: 'cssTest',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'cssTest',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'cssTest',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'cssTest',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'cssTest',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'cssTest',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    distance: 800,
+  },
+
   /* All cooling down schedules */
   {
     training_part: 'cooling_down',
