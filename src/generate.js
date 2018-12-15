@@ -95,7 +95,7 @@ $(document).ready(() => {
 
   $('#buttonDiv').hide();
 
-  $('#swimType, #swimSpeed, #swimTime').click(() => {
+  $('#swimType, #swimSpeed, #swimTime, #newTrainingButton').click(() => {
     const swimType = $(':radio[name=swimType]:checked').val();
     const swimSpeed = $(':radio[name=swimSpeed]:checked').val();
     const swimTime = $(':radio[name=swimTime]:checked').val();
@@ -116,7 +116,7 @@ $(document).ready(() => {
     }
   });
 
-  $('#newTrainingButton').click(() => {
+  $('#resetTrainingButton').click(() => {
     $('#trainingTextBox').fadeOut('slow');
     $('#trainingTextBox').promise().done(() => {
       $('#trainingTextBox').html('');
