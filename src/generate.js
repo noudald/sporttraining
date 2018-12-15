@@ -26,15 +26,20 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     totalDistance += data.get()[randomInt].distance;
   }
 
-  if (swimSpeed && swimTime && (swimSpeed != 'novice')) {
-    const data = trainingdb({
-      training_part: 'build',
-      swim_speed: swimSpeed,
-      swim_time: swimTime,
-    });
-    const randomInt = getRandomInt(0, data.count() - 1);
-    build = data.get()[randomInt].training_text;
-    totalDistance += data.get()[randomInt].distance;
+  if (swimSpeed && swimTime) {
+    if (swimTime == '30' && swimSpeed == 'novice') {
+      // Skip build if swimmer is novice and swims for half an hour.
+      build = null;
+    } else {
+      const data = trainingdb({
+        training_part: 'build',
+        swim_speed: swimSpeed,
+        swim_time: swimTime,
+      });
+      const randomInt = getRandomInt(0, data.count() - 1);
+      build = data.get()[randomInt].training_text;
+      totalDistance += data.get()[randomInt].distance;
+    }
   }
 
   if (swimType && swimSpeed && swimTime) {
