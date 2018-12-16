@@ -14,6 +14,21 @@ function generateTraining(swimType, swimSpeed, swimTime) {
   let build = null;
   let main = null;
   let coolingDown = null;
+  let trainingText = '';
+
+  if (swimType == 'cssTest') {
+    trainingText = '<h1>CSS Test</h1>';
+  } else if (swimType == 'technique') {
+    trainingText = '<h1>Technique training</h1>';
+  } else if (swimType == 'threshold') {
+    trainingText = '<h1>Threshold training</h1>';
+  } else if (swimType == 'sprint') {
+    trainingText = '<h1>Sprint training</h1>';
+  } else if (swimType == 'openwater') {
+    trainingText = '<h1>Open Water training</h1>';
+  } else if (swimType == 'endurance') {
+    trainingText = '<h1>Endurance training</h1>';
+  }
 
   if (swimType == 'cssTest' && swimSpeed && swimTime) {
     const data = trainingdb({
@@ -51,8 +66,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
       const randomInt = getRandomInt(0, data.count() - 1);
       const enduranceTraining = data.get()[randomInt];
       totalDistance = enduranceTraining.distance;
-      let trainingText = `${'<h1>Endurance training</h1></br>'}`
-        + `${enduranceTraining.training_text}</p>`;
+      trainingText += `<p>${enduranceTraining.training_text}</p>`;
       trainingText += `<b>Total distance:</b> ${totalDistance}`;
       return trainingText;
     }
@@ -108,7 +122,6 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     }
   }
 
-  let trainingText = '';
   if (warmingUp) {
     trainingText += `${'<h2>Warming Up</h2><p>'}${warmingUp}</p>`;
   }
