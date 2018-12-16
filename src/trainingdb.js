@@ -1198,76 +1198,112 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
   },
 
   {
-    training_part: 'main',
-    training_type: 'cssTest',
-    swim_speed: 'novice',
-    swim_time: '60',
-    training_text: 'CSS Test:</br>'
-            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
-            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
-            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
-    distance: 800,
-  },
-  {
-    training_part: 'main',
-    training_type: 'cssTest',
-    swim_speed: 'intermediate',
-    swim_time: '60',
-    training_text: 'CSS Test:</br>'
-            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
-            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
-            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
-    distance: 800,
-  },
-  {
-    training_part: 'main',
-    training_type: 'cssTest',
-    swim_speed: 'advanced',
-    swim_time: '60',
-    training_text: 'CSS Test:</br>'
-            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
-            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
-            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
-    distance: 800,
-  },
-  {
-    training_part: 'main',
+    training_part: 'cssTest',
     training_type: 'cssTest',
     swim_speed: 'novice',
     swim_time: '30',
-    training_text: 'CSS Test:</br>'
-            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
-            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+    training_text: 'CSS Test',
+    warming_up_text: '2 x 100m easy + R20s',
+    build_text: '4 x 25m kick + R20s</br>'
+      + '4 x 25m freestyle, slowly increase speed in each 25m</br>'
+      + '100m easy + R60s',
+    main_text: 'CSS Test:</br>'
             + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
-            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
-    distance: 800,
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>. Use 2 x 200m time for your 400m time.',
+    cooling_down_text: '200m freestyle easy, with pull buoy',
+    distance: 900,
   },
   {
-    training_part: 'main',
+    training_part: 'cssTest',
     training_type: 'cssTest',
     swim_speed: 'intermediate',
     swim_time: '30',
-    training_text: 'CSS Test:</br>'
+    training_text: 'CSS Test',
+    warming_up_text: '4 x 100m easy + R20s',
+    build_text: '4 x 25m kick + R10s</br>'
+      + '4 x 50m freestyle, slowly increase speed in each 50m</br>'
+      + '100m easy + R60s',
+    main_text: 'CSS Test:</br>'
             + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
             + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
             + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
             + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
-    distance: 800,
+    cooling_down_text: '200m freestyle easy, with pull buoy',
+    distance: 1600,
   },
   {
-    training_part: 'main',
+    training_part: 'cssTest',
     training_type: 'cssTest',
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: 'CSS Test:</br>'
+    training_text: 'CSS Test',
+    warming_up_text: '4 x 100m easy + R20s',
+    build_text: '4 x 25m kick + R10s</br>'
+      + '4 x 50m freestyle, slowly increase speed in each 50m</br>'
+      + '100m easy + R60s',
+    main_text: 'CSS Test:</br>'
             + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
             + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
             + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
             + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
-    distance: 800,
+    cooling_down_text: '200m freestyle easy, with pull buoy',
+    distance: 1800,
+  },
+  {
+    training_part: 'cssTest',
+    training_type: 'cssTest',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: 'CSS Test',
+    warming_up_text: '2 x 100m easy + R20s',
+    build_text: '4 x 25m kick + R10s</br>'
+      + '4 x 25m freestyle, slowly increase speed in each 25m</br>'
+      + '100m easy + R60s',
+    main_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>. Use 2 x 200m time for your 400m time.',
+    cooling_down_text: '200m freestyle easy + R60s, with pull buoy</br>'
+      + '900m easy',
+    distance: 2400,
+  },
+  {
+    training_part: 'cssTest',
+    training_type: 'cssTest',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: 'CSS Test',
+    warming_up_text: '4 x 100m easy + R20s',
+    build_text: '4 x 25m kick + R10s</br>'
+      + '4 x 50m freestyle, slowly increase speed in each 50m</br>'
+      + '100m easy + R60s',
+    main_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    cooling_down_text: '200m freestyle easy + R60s, with pull buoy</br>'
+      + '400m easy',
+    distance: 2000,
+  },
+  {
+    training_part: 'cssTest',
+    training_type: 'cssTest',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: 'CSS Test',
+    warming_up_text: '4 x 100m easy + R20s',
+    build_text: '4 x 25m kick + R10s</br>'
+      + '4 x 50m freestyle, slowly increase speed in each 50m</br>'
+      + '100m easy + R60s',
+    main_text: 'CSS Test:</br>'
+            + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
+            + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
+    cooling_down_text: '200m freestyle easy + R60s, with pull buoy</br>'
+      + '2 x 200m easy + R60s</br>'
+      + '400m easy',
+    distance: 2400,
   },
 
   /* All cooling down schedules */
