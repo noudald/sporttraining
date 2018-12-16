@@ -40,6 +40,25 @@ function generateTraining(swimType, swimSpeed, swimTime) {
       totalDistance += data.get()[randomInt].distance;
     }
 
+  if (swimType == 'endurance') {
+    if (swimTime == '30') {
+      return 'You cannot do an endurance training in less than 60 minutes.';
+    } else {
+      const data = trainingdb({
+        training_type: swimType,
+        swim_speed: swimSpeed
+      });
+      const randomInt = getRandomInt(0, data.count() - 1);
+      const enduranceTraining = data.get()[randomInt];
+      totalDistance = enduranceTraining.distance;
+      let trainingText = `${'<h1>Endurance training</h1></br>'}`
+        + `${enduranceTraining.training_text}</p>`;
+      trainingText += `<b>Total distance:</b> ${totalDistance}`;
+      return trainingText;
+    }
+  }
+
+
     if (swimSpeed && swimTime) {
       if (swimTime == '30' && swimSpeed == 'novice') {
         // Skip build if swimmer is novice and swims for half an hour.

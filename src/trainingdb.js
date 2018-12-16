@@ -1124,16 +1124,16 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
             + '&nbsp;&nbsp; 4e normale freestyle',
     distance: 1200,
   },
+
   {
     training_part: 'main',
     training_type: 'endurance',
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
-            + '&nbsp;&nbsp; 10x50m</br>'
-            + '&nbsp;&nbsp; 5x100m</br>'
-            + '&nbsp;&nbsp; 2x200m</br>'
-            + '&nbsp;&nbsp; 500m</br>',
+    training_text: '10 x 50m freestyle, start time CSS/2 + 5s</br>'
+      + '5 x 100m freestyle, start time CSS + 10s</br>'
+      + '2 x 200m freestyle, start time 2xCSS + 20s</br>'
+      + '500m freestyle, start time 5xCSS + 50s</br>',
     distance: 1900,
   },
   {
@@ -1141,60 +1141,297 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'endurance',
     swim_speed: 'intermediate',
     swim_time: '60',
-    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
-            + '&nbsp;&nbsp; 15x50m</br>'
-            + '&nbsp;&nbsp; 10x100m</br>'
-            + '&nbsp;&nbsp; 5x200m</br>'
-            + '&nbsp;&nbsp; 500m</br>',
-    distance: 3250,
+    training_text: '16 x 50m freestyle, start time CSS/2 + 5s</br>'
+      + '8 x 100m freestyle, start time CSS + 10s</br>'
+      + '4 x 200m freestyle, start time 2xCSS + 20s</br>'
+      + '500m freestyle, start time 5xCSS + 50s</br>',
+    distance: 2800,
   },
   {
     training_part: 'main',
     training_type: 'endurance',
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
-            + '&nbsp;&nbsp; 20x50m</br>'
-            + '&nbsp;&nbsp; 10x100m</br>'
-            + '&nbsp;&nbsp; 5x200m</br>'
-            + '&nbsp;&nbsp; 2x500m</br>',
-    distance: 4000,
+    training_text: '20 x 50m freestyle, start time CSS/2 + 5s</br>'
+      + '10 x 100m freestyle, start time CSS + 10s</br>'
+      + '5 x 200m freestyle, start time 2xCSS + 20s</br>'
+      + '500m freestyle, start time 5xCSS + 50s</br>',
+    distance: 3500,
   },
+
   {
     training_part: 'main',
     training_type: 'endurance',
-    swim_speed: 'novice',
-    swim_time: '30',
-    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
-            + '&nbsp;&nbsp; 4x50m</br>'
-            + '&nbsp;&nbsp; 3x100m</br>'
-            + '&nbsp;&nbsp; 2x150m</br>'
-            + '&nbsp;&nbsp; 200m</br>',
-    distance: 1000,
-  },
-  {
-    training_part: 'main',
-    training_type: 'endurance',
-    swim_speed: 'intermediate',
-    swim_time: '30',
-    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
-            + '&nbsp;&nbsp; 6x50m</br>'
-            + '&nbsp;&nbsp; 4x100m</br>'
-            + '&nbsp;&nbsp; 2x200m</br>'
-            + '&nbsp;&nbsp; 300m</br>',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '3 x 500m + R60s, where:</br>'
+      + '&nbsp;&nbsp; 1st steady freestyle at CSS + 6s</br>'
+      + '&nbsp;&nbsp; 2nd with fins, very steady swim. Keep your strokes long and smooth</br>'
+      + '&nbsp;&nbsp; 3th steady freestyle at CSS + 4s',
     distance: 1500,
   },
   {
     training_part: 'main',
     training_type: 'endurance',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '4 x 500m + R60s, where:</br>'
+      + '&nbsp;&nbsp; 1st steady freestyle at CSS + 6s</br>'
+      + '&nbsp;&nbsp; 2nd with fins, very steady swim. Keep your strokes long and smooth</br>'
+      + '&nbsp;&nbsp; 3th steady freestyle at CSS + 4s</br>'
+      + '&nbsp;&nbsp; 4th with pull buoy, breathing 3/2/3/2...',
+    distance: 2000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
     swim_speed: 'advanced',
-    swim_time: '30',
-    training_text: 'Freestyle, all at CSS+5s + R20s</br>'
-            + '&nbsp;&nbsp; 8x50m</br>'
-            + '&nbsp;&nbsp; 4x100m</br>'
-            + '&nbsp;&nbsp; 2x200m</br>'
-            + '&nbsp;&nbsp; 500m</br>',
-    distance: 1700,
+    swim_time: '60',
+    training_text: '5 x 500m + R60s, where:</br>'
+      + '&nbsp;&nbsp; 1st steady freestyle at CSS + 6s</br>'
+      + '&nbsp;&nbsp; 2nd with fins, very steady swim. Keep your strokes long and smooth</br>'
+      + '&nbsp;&nbsp; 3th steady freestyle at CSS + 4s</br>'
+      + '&nbsp;&nbsp; 4th with pull buoy, breathing 3/2/3/2...</br>'
+      + '&nbsp;&nbsp; 5th steady freestyle at CSS + 2s</br>',
+    distance: 2500,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: 'BEAT THE BEEP, go faster to have more rest</br>'
+      + '4 x 50m freestyle at CSS+5s + R30s</br>'
+      + '2 x 200m freestyle start time 2 x CSS + 20s</br>'
+      + '4 x 100m freestyle at CSS+5s + R30s</br>'
+      + '2 x 200m freestyle start time 2 x CSS + 20s</br>'
+      + '4 x 50m freestyle at CSS+5s + R30s',
+    distance: 1600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: 'BEAT THE BEEP, go faster to have more rest</br>'
+      + '6 x 50m freestyle at CSS+5s + R30s</br>'
+      + '3 x 200m freestyle start time 2 x CSS + 20s</br>'
+      + '5 x 100m freestyle at CSS+5s + R30s</br>'
+      + '3 x 200m freestyle start time 2 x CSS + 20s</br>'
+      + '6 x 50m freestyle at CSS+5s + R30s',
+    distance: 2300,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: 'BEAT THE BEEP, go faster to have more rest</br>'
+      + '6 x 50m freestyle at CSS+5s + R30s</br>'
+      + '3 x 300m freestyle start time 3 x CSS + 30s</br>'
+      + '5 x 100m freestyle at CSS+5s + R30s</br>'
+      + '3 x 300m freestyle start time 2 x CSS + 30s</br>'
+      + '6 x 50m freestyle at CSS+5s + R30s',
+    distance: 2900,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 x (25m, 50m, 100m, 200m, 300m) freestyle + R30s</br>'
+      + '&nbsp;&nbsp; 1st set at CSS + 6s per 100m</br>'
+      + '&nbsp;&nbsp; 2nd set at CSS + 3s per 100m',
+    distance: 1650,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2 x (50m, 100m, 200m, 300m, 200m D, 100m D, 50m D) freestyle + R30s</br>'
+      +' &nbsp;&nbsp; at CSS + 6s per 100m, D (decending) at CSS + 3s per 100m',
+    distance: 2000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'advanced',
+    training_text: '2 x (100m, 200m, 300m, 400m, 300m D, 200m D, 100m D) freestyle + R30s</br>'
+      +'&nbsp;&nbsp; at CSS + 6s per 100m, D (decending) at CSS + 3s per 100m',
+    swim_time: '60',
+    distance: 3200,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'novice',
+    training_text: '2 x (4 min, 8 min, 16 min) freestyle + R60s, easy steady pace',
+    swim_time: '60',
+    distance: 1500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    training_text: '2 x (4 min, 8 min, 16 min) freestyle + R60s, easy steady pace',
+    swim_time: '60',
+    distance: 2000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'advanced',
+    training_text: '2 x (4 min, 8 min, 16 min) freestyle + R60s, easy steady pace',
+    swim_time: '60',
+    distance: 3000,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'novice',
+    training_text: 'Two sets (optional set two with pull buoy and paddles):</br>'
+      + '4 x 100m freestyle at CSS+10s + R20s</br>'
+      + '300m freestyle BEAT THE BEEPER! Starttime CSS+10s per 100m',
+    swim_time: '60',
+    distance: 1400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    training_text: 'Two sets:</br>'
+      + '200m freeestyle at CSS+10s per 100m + R20s</br>'
+      + '300m freeestyle BEAT THE BEEPER! Starttime CSS+10s per 100m (optional with pull buoy and paddles)</br>'
+      + '400m freeestyle BEAT THE BEEPER! Starttime CSS+10s per 100m</br>'
+      + '500m freeestyle BEAT THE BEEPER! Starttime CSS+10s per 100m (optional with pull buoy and paddles)</br>',
+    swim_time: '60',
+    distance: 2800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'advanced',
+    training_text: 'Two sets:</br>'
+      + '3 x 100m freestyle at CSS+10s per 100m + R20s</br>'
+      + '300m freestyle BEAT THE BEEPER! Starttime CSS+10s per 100m (optional with pull buoy and paddles)</br>'
+      + '400m freestyle BEAT THE BEEPER! Starttime CSS+10s per 100m</br>'
+      + '500m freestyle BEAT THE BEEPER! Starttime CSS+10s per 100m (optional with pull buoy and paddles)</br>',
+    swim_time: '60',
+    distance: 3000,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'novice',
+    training_text: '4 x 200m freestyle + R30s:</br>'
+      + '&nbsp;&nbsp; 1 & 4 easy</br>'
+      + '&nbsp;&nbsp; 2 &uarr; easy &uarr; moderate pace</br>'
+      + '&nbsp;&nbsp; 3 at CSS+2s per 100m</br>'
+      + '4 x 200m + R20s:</br>'
+      + '&nbsp;&nbsp; 1 &uarr; drill 6-1-6  &darr; freestyle</br>'
+      + '&nbsp;&nbsp; 2 & 4 freestyle easy</br>'
+      + '&nbsp;&nbsp; 3 &uarr; drill broken arrow &darr; freestyle</br>'
+      + '4 x 100m + R15s:</br>'
+      + '&nbsp;&nbsp; 35m drill doggy paddle 65m freestyle R15s</br>'
+      + '4 x 100m freestyle + R30s:</br>'
+      + '&nbsp;&nbsp; 1 & 4 easy</br>'
+      + '&nbsp;&nbsp; 2 &uarr; easy &darr; moderate pace</br>'
+      + '&nbsp;&nbsp; 3 at CSS',
+    swim_time: '60',
+    distance: 2000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    training_text: '4 x 300m freestyle + R30s:</br>'
+      + '&nbsp;&nbsp; 1 & 4 easy</br>'
+      + '&nbsp;&nbsp; 2 &uarr; easy &uarr; moderate pace</br>'
+      + '&nbsp;&nbsp; 3 at CSS+3s per 100m</br>'
+      + '4 x 200m + R20s:</br>'
+      + '&nbsp;&nbsp; 1 &uarr; drill 6-1-6  &darr; freestyle</br>'
+      + '&nbsp;&nbsp; 2 & 4 freestyle easy</br>'
+      + '&nbsp;&nbsp; 3 &uarr; drill broken arrow &darr; freestyle</br>'
+      + '4 x 100m + R15s:</br>'
+      + '&nbsp;&nbsp; 35m drill doggy paddle 65m freestyle R15s</br>'
+      + '4 x 200m freestyle + R30s:</br>'
+      + '&nbsp;&nbsp; 1 & 4 easy</br>'
+      + '&nbsp;&nbsp; 2 &uarr; easy &darr; moderate pace</br>'
+      + '&nbsp;&nbsp; 3 at CSS+2s per 100m',
+    swim_time: '60',
+    distance: 2800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'advanced',
+    training_text: '4 x 400m freestyle + R30s:</br>'
+      + '&nbsp;&nbsp; 1 & 4 easy</br>'
+      + '&nbsp;&nbsp; 2 &uarr; easy &uarr; moderate pace</br>'
+      + '&nbsp;&nbsp; 3 at CSS+4s per 100m</br>'
+      + '4 x 200m + R20s:</br>'
+      + '&nbsp;&nbsp; 1 &uarr; drill 6-1-6  &darr; freestyle</br>'
+      + '&nbsp;&nbsp; 2 & 4 freestyle easy</br>'
+      + '&nbsp;&nbsp; 3 &uarr; drill broken arrow &darr; freestyle</br>'
+      + '4 x 100m + R15s:</br>'
+      + '&nbsp;&nbsp; 35m drill doggy paddle 65m freestyle R15s</br>'
+      + '4 x 200m freestyle + R30s:</br>'
+      + '&nbsp;&nbsp; 1 & 4 easy</br>'
+      + '&nbsp;&nbsp; 2 &uarr; easy &darr; moderate pace</br>'
+      + '&nbsp;&nbsp; 3 at CSS+2s per 100m</br>',
+    swim_time: '60',
+    distance: 3600,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '100m freestyle easy + R30s</br>'
+      + '200m freestyle with pull buoy and paddles + R30s</br>'
+      + '300m freestyle with fins + R30s</br>'
+      + '100m, as 50m drill 3-3-3, 50m freestyle + R30s</br>'
+      + '400m, as 2 x (50m breathing left side, 50m breathing right side, 100m breathing every 5 stoke) + R30s</br>'
+      + '400m freestyle with pull buoy, as 4 x (10m drill scull, 15m drill doggy paddle, 75m easy) + R30s</br>'
+      + '4 x 150m, as 100m with pull buoy and paddles, 50m tempo, 200m easy + R30s',
+    distance: 2000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '100m freestyle easy + R30s</br>'
+      + '200m freestyle with pull buoy and paddles + R30s</br>'
+      + '300m freestyle with fins + R30s</br>'
+      + '100m, as 50m drill 3-3-3, 50m freestyle + R30s</br>'
+      + '400m, as 2 x (50m breathing left side, 50m breathing right side, 100m breathing every 5 stoke) + R30s</br>'
+      + '400m freestyle with pull buoy, as 4 x (10m drill scull, 15m drill doggy paddle, 75m easy) + R30s</br>'
+      + '5 x 250m freestyle, as 200m with pull buoy, 50m sprint + R30s</br>'
+      + '200m easy',
+    distance: 2950,
+  },
+  {
+    training_part: 'main',
+    training_type: 'endurance',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '100m freestyle easy + R30s</br>'
+      + '200m freestyle with pull buoy and paddles + R30s</br>'
+      + '300m freestyle with fins + R30s</br>'
+      + '100m, as 50m drill 3-3-3, 50m freestyle + R30s</br>'
+      + '400m, as 2 x (50m breathing left side, 50m breathing right side, 100m breathing every 5 stoke) + R30s</br>'
+      + '400m freestyle with pull buoy, as 4 x (10m drill scull, 15m drill doggy paddle, 75m easy) + R30s</br>'
+      + '6 x 250m freestyle, as 200m with pull buoy, 50m sprint + R30s</br>'
+      + '200m easy',
+    distance: 3200,
   },
 
   {
