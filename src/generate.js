@@ -8,6 +8,10 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function get_disclaimer() {
+  return '<p>The information contained in this generated swim training is for informational purposes only, and is made available to you as a self-help tool for your own use.</p>';
+}
+
 function generateTraining(swimType, swimSpeed, swimTime) {
   let totalDistance = 0;
   let warmingUp = null;
@@ -68,6 +72,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
       totalDistance = enduranceTraining.distance;
       trainingText += `<p>${enduranceTraining.training_text}</p>`;
       trainingText += `<b>Total distance:</b> ${totalDistance}`;
+      trainingText += get_disclaimer();
       return trainingText;
     }
   }
@@ -138,6 +143,8 @@ function generateTraining(swimType, swimSpeed, swimTime) {
   if (totalDistance > 0) {
     trainingText += `<b>Total distance:</b> ${totalDistance}`;
   }
+
+  trainingText += get_disclaimer();
 
   return trainingText;
 }
