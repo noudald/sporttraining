@@ -21,15 +21,36 @@
 
     <body>
         <div id="container">
+            <div id="welcome">
+                <p>
+                Welcome to the swim training generator. This tool is made available to you as a self-help tool for creating swim workouts:
+                <ul>
+                    <li>If you're unsure what to do, you could start with a CSS test. Select <i>CSS Test</i>; <i>Novice</i>, <i>Intermediate</i> or
+                        <i>Advanced</i> (depending on your level); and how long you can swim. The CSS test is hard, but will help you determine your
+                        critical swim speed (CSS).</li>
+                    <li>Knowing your CSS you can start working on your <i>Technique</i>, with several technical exercises. Improve you critical swim
+                        speed with <i>Threshold/CSS</i> workouts. Or you can improve your endurance with the <i>Endurance</i> workouts.</li>
+                    <li>We've also added specific workouts for <i>Open Water</i> and <i>Sprint</i>.</li>
+                    <li>If you feel lucky, try out the <i>Random</i> button.</li>
+                </ul>
+                When a training is generated you can print the training with the <i>Print training</i> button, generate a new training with
+                <i>New training</i>, or remove all selections and start over with <i>Reset training</i>.
+                </p>
+                <p>
+                Training workouts are randomly generated. We try to keep these workouts as coherent as possible, but it's still possible for this tool
+                to generate impossible workouts. Always use your common sense when creating your own workouts. If in doubt, always consult for
+                professional advice, diagnosis, or help. Never rely on information on this website in place of seeking professional advice.
+                </p>
+            </div>
             <div id="trainingOptions">
                 <div id="swimType">
                     Choose your type of training:<br>
+                    <input type="radio" name="swimType" value="cssTest">CSS Test<br>
                     <input type="radio" name="swimType" value="technique">Technique<br>
                     <input type="radio" name="swimType" value="threshold">Threshold/CSS<br>
                     <input type="radio" name="swimType" value="sprint">Sprint<br>
                     <input type="radio" name="swimType" value="openwater">Open Water<br>
                     <input type="radio" name="swimType" value="endurance">Endurance<br>
-                    <input type="radio" name="swimType" value="cssTest">CSS Test<br>
                     <input type="radio" name="swimType" value="random">Random<br><br>
                 </div>
 
