@@ -256,7 +256,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: null,
     swim_speed: 'novice',
     swim_time: '30',
-    training_text: '4 x 50m freestyle easy, sink down before every 50m',
+    training_text: '4 x 50m freestyle easy, sink down to the bottom of the pool every 50m',
     distance: 200,
   },
   {
@@ -264,7 +264,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: null,
     swim_speed: 'intermediate',
     swim_time: '30',
-    training_text: '200m freestyle easy, sink down before every 50m',
+    training_text: '200m freestyle easy, sink down to the bottom of the pool every 50m',
     distance: 200,
   },
   {
@@ -272,7 +272,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: null,
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: '200m freestyle easy, sink down before every 50m',
+    training_text: '200m freestyle easy, sink down to the bottom of the pool every 50m',
     distance: 200,
   },
 
