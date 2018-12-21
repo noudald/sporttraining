@@ -13,7 +13,7 @@ function get_disclaimer() {
 }
 
 function get_drills_sheet() {
-  return '<p>Most drills in these workouts are explained in the <a href="http://swimsmooth.com/pauls_images/drills.pdf">Swim Smooth drill cheat sheet</a>.</p>';
+  return '<p>Most drills in these workouts are explained in the <a href="http://swimsmooth.com/pauls_images/drills.pdf">Swim Smooth drill cheat sheet</a>, or can be found on <a href="https://www.youtube.com/playlist?list=PLYcon0_LG98B3sqLTSWzy7DOV7aJkZ8R_">YouTube</a>.</p>';
 }
 
 function generateTraining(swimType, swimSpeed, swimTime) {
