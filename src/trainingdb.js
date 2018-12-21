@@ -558,7 +558,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: '4 x 200m + R20s, where:<br>'
       + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr; freestyle<br>'
       + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
-      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr; freestyle<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr; broken arrow &darr; freestyle<br>'
       + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 800,
   },
@@ -570,7 +570,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: '4 x 200m + R20s, where:<br>'
       + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr; freestyle<br>'
       + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
-      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr; freestyle<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr; broken arrow &darr; freestyle<br>'
       + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 800,
   },
@@ -582,7 +582,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: '4 x 200m + R20s, where:<br>'
       + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr; freestyle<br>'
       + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
-      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr; freestyle<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr; broken arrow &darr; freestyle<br>'
       + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 800,
   },
@@ -594,7 +594,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: '4 x 100m + R20s, where:<br>'
       + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr; freestyle<br>'
       + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
-      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr; freestyle<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr; broken arrow &darr; freestyle<br>'
       + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 400,
   },
@@ -606,7 +606,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: '4 x 100m + R20s, where:<br>'
       + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr; freestyle<br>'
       + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
-      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr; freestyle<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr; broken arrow &darr; freestyle<br>'
       + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 400,
   },
@@ -618,7 +618,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: '4 x 100m + R20s, where:<br>'
       + '&nbsp;&nbsp;1st set: with fins, &uarr; 6/1/6 &darr; freestyle<br>'
       + '&nbsp;&nbsp;2nd set: with pull buoy, breathing 3/5/7/3...<br>'
-      + '&nbsp;&nbsp;3th set: with fins, &uarr broken arrow &darr; freestyle<br>'
+      + '&nbsp;&nbsp;3th set: with fins, &uarr; broken arrow &darr; freestyle<br>'
       + '&nbsp;&nbsp;4th set: freestyle - nice and smooth',
     distance: 400,
   },
