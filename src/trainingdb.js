@@ -957,7 +957,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'threshold',
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: '100-200-300-300-200-100 freestyle at CSS + R30s',
+    training_text: '10 x 100m at CSS + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace and take 1 beep recovery per 100m',
     distance: 1000,
   },
   {
@@ -965,7 +965,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'threshold',
     swim_speed: 'intermediate',
     swim_time: '60',
-    training_text: '100-200-300-400-300-200-100 freestyle at CSS + R30s',
+    training_text: '14 or 16 x 100m at CSS + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace and take 1 beep recovery per 100m',
     distance: 1400,
   },
   {
@@ -973,7 +973,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'threshold',
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: '100-200-300-400-400-300-200-100 freestyle at CSS + R30s',
+    training_text: '18 or 20 x 100m at CSS + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace and take 1 beep recovery per 100m',
     distance: 1800,
   },
   {
@@ -981,15 +981,15 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'threshold',
     swim_speed: 'novice',
     swim_time: '30',
-    training_text: '50-100-150-150-100-50 freestyle at CSS + R15s',
-    distance: 600,
+    training_text: '5 x 100m at CSS + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace and take 1 beep recovery per 100m',
+    distance: 500,
   },
   {
     training_part: 'main',
     training_type: 'threshold',
     swim_speed: 'intermediate',
     swim_time: '30',
-    training_text: '50-100-150-200-150-100-50 freestyle at CSS + R15s',
+    training_text: '8 x 100m at CSS + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace and take 1 beep recovery per 100m',
     distance: 800,
   },
   {
@@ -997,39 +997,806 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'threshold',
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: '50-100-150-200-200-150-100-50 freestyle at CSS + R15s',
+    training_text: '10 x 100m at CSS + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace and take 1 beep recovery per 100m',
     distance: 1000,
   },
+
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '5 x 200m at CSS+2s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 2s and take 1 beep recovery per 100m',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '7 x 200m at CSS+2s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 2s and take 1 beep recovery per 100m',
+    distance: 1400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '8 x 200m at CSS+2s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 2s and take 1 beep recovery per 100m',
+    distance: 1600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '3 x 200m at CSS+2s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 2s and take 1 beep recovery per 100m',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '4 x 200m at CSS+2s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 2s and take 1 beep recovery per 100m',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '5 x 200m at CSS+2s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 2s and take 1 beep recovery per 100m',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 x 400m at CSS+4s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 4s and take 1 beep recovery per 100m',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '3 x 400m at CSS+4s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 4s and take 1 beep recovery per 100m',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '4 x 400m at CSS+4s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 4s and take 1 beep recovery per 100m',
+    distance: 1600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '3 x 150m at CSS+3s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 3s and take 1 beep recovery per 100m',
+    distance: 450,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '2 x 300m at CSS+3s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 3s and take 1 beep recovery per 100m',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '3 x 300m at CSS+3s / 100m + R20s, hold fastest maintainable pace, if use metrome: set this per 25m at CSS pace + 3s and take 1 beep recovery per 100m',
+    distance: 900,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: 'For each 2 beeps recovery (beep is swimtime per 25m):'
+      + '100m at CSS<br>'
+      + '150m at CSS+1s / 100m<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '150m at CSS+1s / 100m<br>'
+      + '100m at CSS',
+    distance: 700,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: 'For each 2 beeps recovery (beep is swimtime per 25m):'
+      + '100m at CSS<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '300m at CSS+3s / 100m<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '100m at CSS',
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: 'For each 2 beeps recovery (beep is swimtime per 25m):'
+      + '100m at CSS<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '300m at CSS+3s / 100m<br>'
+      + '300m at CSS+3s / 100m<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '100m at CSS',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: 'For each 2 beeps recovery (beep is swimtime per 25m):'
+      + '50m at CSS<br>'
+      + '100m at CSS+1s / 100m<br>'
+      + '150m at CSS+2s / 100m<br>'
+      + '100m at CSS+1s / 100m<br>'
+      + '50m at CSS',
+    distance: 450,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: 'For each 2 beeps recovery (beep is swimtime per 25m):'
+      + '100m at CSS<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '300m at CSS+3s / 100m<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '100m at CSS',
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: 'For each 2 beeps recovery (beep is swimtime per 25m):'
+      + '100m at CSS<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '300m at CSS+3s / 100m<br>'
+      + '200m at CSS+2s / 100m<br>'
+      + '100m at CSS',
+    distance: 900,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '1 x (3 x 100m at CSS, 2 x 150m at CSS+1s / 100m, 200m at CSS+2s / 100m), + R20s of 1 beep (beep is swimtime per 25m)',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2 x (3 x 100m at CSS, 200m at CSS+2s / 100m, 300m at CSS+3s / 100m), + R20s of 1 beep (beep is swimtime per 25m)',
+    distance: 1600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2 x (3 x 100m at CSS, 2 x 200m at CSS+2s / 100m, 300m at CSS+3s / 100m), + R20s of 1 beep (beep is swimtime per 25m)',
+    distance: 2000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '100m at CSS, 150m at CSS+1s / 100m,  200m at CSS+2s / 100m + R20s of 1 beep (beep is swimtime per 25m)',
+    distance: 450,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '3 x 100m at CSS, 200m at CSS+2s / 100m, 300m at CSS+3s / 100m + R20s of 1 beep (beep is swimtime per 25m)',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '3 x 100m at CSS, 2 x 200m at CSS+2s / 100m, 300m at CSS+2s / 100m + R20s of 1 beep (beep is swimtime per 25m)',
+    distance: 900,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 x 100m at CSS, 200m at CSS+2s / 100m, 3 x 100m at CSS, 300m at CSS+3s / 100m + R20s or 1 beep (beep is swimtime per 25m)',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2 x 100m at CSS, 200m at CSS+2s / 100m, 2 x (3 x 100m at CSS, 300m at CSS+3s / 100m) + R20s or 1 beep (beep is swimtime per 25m)',
+    distance: 1600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2 x 100m at CSS, 200m at CSS+2s / 100m, 3 x 100m at CSS, 300m at CSS+3s / 100m, 4 x 100m at CSS, 400m at CSS+4s / 100m + R20s or 1 beep (beep is swimtime per 25m)',
+    distance: 1800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '100m at CSS, 200m at CSS+2s / 100m, 100m at CSS, 300m at CSS+3s / 100m + R20s or 1 beep (beep is swimtime per 25m)',
+    distance: 700,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '2 to 3 x (100m at CSS, 200m at CSS+2s / 100m + R20s or 1 beep (beep is swimtime per 25m))',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '2 to 3 x (2 x 100m at CSS, 200m at CSS+2s / 100m + R20s or 1 beep (beep is swimtime per 25m))',
+    distance: 800,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '3 x 300m at CSS+3s / 100m + R40s or 2 beeps (beep is swimtime per 25m), 1 & 3 = freestyle, 2 = Pull buoy & Paddles',
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '4 x 300m at CSS+3s / 100m + R40s or 2 beeps (beep is swimtime per 25m), 1 & 3 = freestyle,  2 & 4 = Pull buoy & Paddles',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '6 x 300m at CSS+3s / 100m + R40s or 2 beeps (beep is swimtime per 25m), 1 & 3 & 5 = freestyle,  2 & 4 & 6 = Pull buoy & Paddles',
+    distance: 1800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '2 x 300m at CSS+3s / 100m + R40s or 2 beeps (beep is swimtime per 25m), 1 = freestyle, 2 = Pull buoy & Paddles',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '3 x 250m at CSS+3s / 100m + R30s or 2 beeps (beep is swimtime per 25m), 1 & 3 = freestyle, 2 = Pull buoy & Paddles',
+    distance: 750,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '3 x 300m at CSS+3s / 100m + R40s or 2 beeps (beep is swimtime per 25m), 1 & 3 = freestyle, 2 = Pull buoy & Paddles',
+    distance: 900,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '20 x 50m Spike set:<br>'
+      + '&nbsp;&nbsp; 8 x 50m freestyle, sprint every 4th: starttime = CSS+5s per 50m</br>'
+      + '&nbsp;&nbsp; 6 x 50m freestyle, sprint every 3th: starttime = CSS+10s per 50m</br>'
+      + '&nbsp;&nbsp; 4 x 50m freestyle, sprint every 2nd: starttime = CSS+15s per 50m</br>'
+      + '&nbsp;&nbsp; 2 x 50m freestyle, sprint every time: starttime = CSS+20s per 50m',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '31 x 50m Spike set:<br>'
+      + '&nbsp;&nbsp; 12 x 50m freestyle, sprint every 4th: starttime = CSS+5s per 50m</br>'
+      + '&nbsp;&nbsp; 9 x 50m freestyle, sprint every 3th: starttime = CSS+10s per 50m</br>'
+      + '&nbsp;&nbsp; 6 x 50m freestyle, sprint every 2nd: starttime = CSS+15s per 50m</br>'
+      + '&nbsp;&nbsp; 4 x 50m freestyle, sprint every time: starttime = CSS+20s per 50m',
+    distance: 1550,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '40 x 50m Spike set:<br>'
+      + '&nbsp;&nbsp; 16 x 50m freestyle, sprint every 4th: starttime = CSS+5s per 50m</br>'
+      + '&nbsp;&nbsp; 12 x 50m freestyle, sprint every 3th: starttime = CSS+10s per 50m</br>'
+      + '&nbsp;&nbsp; 8 x 50m freestyle, sprint every 2nd: starttime = CSS+15s per 50m</br>'
+      + '&nbsp;&nbsp; 4 x 50m freestyle, sprint every time: starttime = CSS+20s per 50m',
+    distance: 2000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '10 x 50m Spike set:<br>'
+      + '&nbsp;&nbsp; 4 x 50m freestyle, sprint every 4th: starttime = CSS+5s per 50m</br>'
+      + '&nbsp;&nbsp; 3 x 50m freestyle, sprint every 3th: starttime = CSS+10s per 50m</br>'
+      + '&nbsp;&nbsp; 2 x 50m freestyle, sprint every 2nd: starttime = CSS+15s per 50m</br>'
+      + '&nbsp;&nbsp; 1 x 50m freestyle, sprint every time: starttime = CSS+20s per 50m',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '15 x 50m Spike set:<br>'
+      + '&nbsp;&nbsp; 6 x 50m freestyle, sprint every 4th: starttime = CSS+5s per 50m</br>'
+      + '&nbsp;&nbsp; 4 x 50m freestyle, sprint every 3th: starttime = CSS+10s per 50m</br>'
+      + '&nbsp;&nbsp; 3 x 50m freestyle, sprint every 2nd: starttime = CSS+15s per 50m</br>'
+      + '&nbsp;&nbsp; 2 x 50m freestyle, sprint every time: starttime = CSS+20s per 50m',
+    distance: 750,
+  },
+  {
+    training_part: 'main',
+    training_type: 'threshold',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '20 x 50m Spike set:<br>'
+      + '&nbsp;&nbsp; 8 x 50m freestyle, sprint every 4th: starttime = CSS+5s per 50m</br>'
+      + '&nbsp;&nbsp; 6 x 50m freestyle, sprint every 3th: starttime = CSS+10s per 50m</br>'
+      + '&nbsp;&nbsp; 4 x 50m freestyle, sprint every 2nd: starttime = CSS+15s per 50m</br>'
+      + '&nbsp;&nbsp; 2 x 50m freestyle, sprint every time: starttime = CSS+20s per 50m',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '4 x 50m + R10s, head-up sighting every 9 strokes</br>'
+      + '200m + R20s, with partners practicing inline drafting swapping every 50m</br>'
+      + '2 x 100m + R15s practice arrow head drafting at a moderate pace with 2 friends',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '4 x 50m + R10s, head-up sighting every 9 strokes</br>'
+      + '2 x 200m + R20s, with partners practicing inline drafting swapping every 50m</br>'
+      + '4 x 100m + R15s practice arrow head drafting at a moderate pace with 2 friends',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '4 x 50m + R10s, head-up sighting every 9 strokes</br>'
+      + '4 x 200m + R20s, with partners practicing inline drafting swapping every 50m</br>'
+      + '4 x 100m + R15s practice arrow head drafting at a moderate pace with 2 friends',
+    distance: 1400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4 x 50m + R10s, head-up sighting every 9 strokes</br>'
+      + '200m + R20s, with partners practicing inline drafting swapping every 50m</br>'
+      + '2 x 100m + R15s practice arrow head drafting at a moderate pace with 2 friends',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '4 x 50m + R10s, head-up sighting every 9 strokes</br>'
+      + '200m + R20s, with partners practicing inline drafting swapping every 50m</br>'
+      + '4 x 100m + R15s practice arrow head drafting at a moderate pace with 2 friends',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '4 x 50m + R10s, head-up sighting every 9 strokes</br>'
+      + '200m + R20s, with partners practicing inline drafting swapping every 50m</br>'
+      + '4 x 100m + R15s practic arrow head drafting at a moderate pace with 2 friends',
+    distance: 800,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 x 300m + R30s, if possible drafting steadily with a partner</br>'
+      + '&nbsp;&nbsp; 1st with fins, long and smooth</br>'
+      + '&nbsp;&nbsp; 2nd with fins, head-up sighting ever 9 strokes',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '3 x 300m + R30s, if possible drafting steadily with a partner</br>'
+      + '&nbsp;&nbsp; 1st with fins, long and smooth</br>'
+      + '&nbsp;&nbsp; 2nd with fins, head-up sighting ever 9 strokes</br>'
+      + '&nbsp;&nbsp; 3th with pull buoy, breathing to your least favorite side',
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '4 x 300m + R30s, if possible drafting steadily with a partner</br>'
+      + '&nbsp;&nbsp; 1st with fins, long and smooth</br>'
+      + '&nbsp;&nbsp; 2nd with fins, head-up sighting ever 9 strokes</br>'
+      + '&nbsp;&nbsp; 3th with pull buoy, breathing to your least favorite side</br>'
+      + '&nbsp;&nbsp; 4th freestyle',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '2 x 200m + R30s, if possible drafting steadily with a partner</br>'
+      + '&nbsp;&nbsp; 1st with fins, long and smooth</br>'
+      + '&nbsp;&nbsp; 2nd with fins, head-up sighting ever 9 strokes',
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '3 x 200m + R30s, if possible drafting steadily with a partner</br>'
+      + '&nbsp;&nbsp; 1st with fins, long and smooth</br>'
+      + '&nbsp;&nbsp; 2nd with fins, head-up sighting ever 9 strokes</br>'
+      + '&nbsp;&nbsp; 3th with pull buoy, breathing to your least favorite side',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '4 x 200m + R30s, if possible drafting steadily with a partner</br>'
+      + '&nbsp;&nbsp; 1st with fins, long and smooth</br>'
+      + '&nbsp;&nbsp; 2nd with fins, head-up sighting ever 9 strokes</br>'
+      + '&nbsp;&nbsp; 3th with pull buoy, breathing to your least favorite side</br>'
+      + '&nbsp;&nbsp; 4th freestyle',
+    distance: 800,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '8 x 50m + R10s, start and turn without touching the sides of the pool</br>'
+        + '4 x 100m + R15s, drafting but trying to drop your partners (or 50m easy, 50m fast)',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '400m + R30s, drafting inline, swap each 100m, hold a moderate fast pace</br>'
+        + '8 x 50m + R10s, start and turn without touching the sides of the pool</br>'
+        + '4 x 100m + R15s, drafting but trying to drop your partners (or 50m easy, 50m fast)',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2 x 400m + R30s, drafting inline, swap each 100m, hold a moderate fast pace</br>'
+        + '8 x 50m + R10s, start and turn without touching the sides of the pool</br>'
+        + '4 x 100m + R15s, drafting but trying to drop your partners (or 50m easy, 50m fast)',
+    distance: 1600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4 x 50m + R10s, start and turn without touching the sides of the pool</br>'
+        + '(2 to 3) x 100m + R15s, drafting but trying to drop your partners (or 50m easy, 50m fast)',
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '400m + R30s, drafting inline, swap each 100m, hold a moderate fast pace</br>'
+        + '8 x 50m + R10s, start and turn without touching the sides of the pool',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '400m + R30s, drafting inline, swap each 100m, hold a moderate fast pace</br>'
+        + '8 x 50m + R10s, start and turn without touching the sides of the pool',
+    distance: 800,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 x 150m, 4 x 50m, 3 x 100m, 4 x 50m at CSS + R10s, optional with pull buoy & band, focus on openwater start and head-up sighting',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2 x 150m, 4 x 75m, 3 x 100m, 6 x 50m at CSS + R10s, optional with pull buoy & band, focus on openwater start and head-up sighting',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '300m at CSS+3s / 100m, 2 x 150m, 4 x 75m, 3 x 100m, 6 x 50m at CSS + R10s, optional with pull buoy & band, focus on openwater start and head-up sighting',
+    distance: 1500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '150m, 4 x 50m, 4 x 50m at CSS + R10s, optional with pull buoy & band, focus on openwater start and head-up sighting',
+    distance: 650,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '150m, 4 x 75m, 2 x 100m, 3 x 50m at CSS + R10s, optional with pull buoy & band, focus on openwater start and head-up sighting',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '200m at CSS+2s / 100m, 150m, 2 x 75m, 2 x 100m, 4 x 50m at CSS + R10s, optional with pull buoy & band, focus on openwater start and head-up sighting',
+    distance: 900,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '12 x 50m + R10s, where:</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +12 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -12 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +8 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -8 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +4 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -4 SPM',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '18 x 50m + R10s, where:</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate +12 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate -12 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate +8 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate -8 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate +4 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate -4 SPM',
+    distance: 900,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '24 x 50m + R10s, where:</br>'
+        + '&nbsp;&nbsp; 4 x 50m at base stroke rate +12 SPM</br>'
+        + '&nbsp;&nbsp; 4 x 50m at base stroke rate -12 SPM</br>'
+        + '&nbsp;&nbsp; 4 x 50m at base stroke rate +8 SPM</br>'
+        + '&nbsp;&nbsp; 4 x 50m at base stroke rate -8 SPM</br>'
+        + '&nbsp;&nbsp; 4 x 50m at base stroke rate +4 SPM</br>'
+        + '&nbsp;&nbsp; 4 x 50m at base stroke rate -4 SPM',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '10 x 50m + R10s, where:</br>'
+        + '&nbsp;&nbsp; 50m at base stroke rate +12 SPM</br>'
+        + '&nbsp;&nbsp; 50m at base stroke rate -12 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +8 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -8 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +4 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -4 SPM',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '12 x 50m + R10s, where:</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +12 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -12 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +8 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -8 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate +4 SPM</br>'
+        + '&nbsp;&nbsp; 2 x 50m at base stroke rate -4 SPM',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '18 x 50m + R10s, where:</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate +12 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate -12 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate +8 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate -8 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate +4 SPM</br>'
+        + '&nbsp;&nbsp; 3 x 50m at base stroke rate -4 SPM',
+    distance: 900,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '4 x 150m, race simulation (with 2 to 4 swimmers), drafting inline, fast effort, climb out of the pool and walk to other end of the pool at the end of each interval, swap positions after each interval',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '8 x 150m, race simulation (with 2 to 4 swimmers), drafting inline, fast effort, climb out of the pool and walk to other end of the pool at the end of each interval, swap positions after each interval',
+    distance: 1200,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '10 x 150m, race simulation (with 2 to 4 swimmers), drafting inline, fast effort, climb out of the pool and walk to other end of the pool at the end of each interval, swap positions after each interval',
+    distance: 1500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '4 x 100m, race simulation (with 2 to 4 swimmers), drafting inline, fast effort, climb out of the pool and walk to other end of the pool at the end of each interval, swap positions after each interval',
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '(6 to 8) x 100m, race simulation (with 2 to 4 swimmers), drafting inline, fast effort, climb out of the pool and walk to other end of the pool at the end of each interval, swap positions after each interval',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'openwater',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '(8 to 10) x 100m, race simulation (with 2 to 4 swimmers), drafting inline, fast effort, climb out of the pool and walk to other end of the pool at the end of each interval, swap positions after each interval',
+    distance: 800,
+  },
+
   {
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: '15x50m freestyle + R30s: 25m fast, 25m easy',
-    distance: 750,
+    training_text: '6 x 100m + R60s, aim to swim as fast as possible with consitent pace, breathing every 5 stroke!',
+    distance: 600,
   },
   {
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'intermediate',
     swim_time: '60',
-    training_text: '20x50m freestyle + R30s: 25m fast, 25m easy',
-    distance: 1000,
+    training_text: '8 x 100m + R60s, aim to swim as fast as possible with consitent pace, breathing every 5 stroke!',
+    distance: 800,
   },
   {
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: '25x50m freestyle + R30s: 25m fast, 25m easy',
-    distance: 1250,
+    training_text: '10 x 100m + R60s, aim to swim as fast as possible with consitent pace, breathing every 5 stroke!',
+    distance: 1000,
   },
   {
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'novice',
     swim_time: '30',
-    training_text: '8x50m freestyle + R30s: 25m fast, 25m easy',
+    training_text: '(4 to 5) x 100m + R60s, aim to swim as fast as possible with consitent pace, breathing every 5 stroke!',
     distance: 400,
   },
   {
@@ -1037,92 +1804,230 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'sprint',
     swim_speed: 'intermediate',
     swim_time: '30',
-    training_text: '10x50m freestyle + R30s: 25m fast, 25m easy',
-    distance: 500,
+    training_text: '(6 to 8) x 100m + R60s, aim to swim as fast as possible with consitent pace, breathing every 5 stroke!',
+    distance: 600,
   },
   {
     training_part: 'main',
     training_type: 'sprint',
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: '12x50m freestyle + R30s: 25m fast, 25m easy',
+    training_text: '(8 to 10) x 100m + R60s, aim to swim as fast as possible with consitent pace, breathing every 5 stroke!',
+    distance: 800,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '6 x 50m + R20s, 25m fast + 25m easy</br>'
+       + '12 x 25m + R10s, odd nuber fast & even numbers easy',
     distance: 600,
   },
   {
     training_part: 'main',
-    training_type: 'openwater',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '8 x 50m + R20s, 25m fast + 25m easy</br>'
+       + '16 x 25m + R10s, odd nuber fast & even numbers easy',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '8 x 50m + R20s, 25m fast + 25m easy</br>'
+       + '16 x 25m + R10s, odd nuber fast & even numbers easy',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '5 x 50m + R20s, 25m fast + 25m easy</br>'
+       + '12 x 25m + R10s, odd nuber fast & even numbers easy',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '8 x 50m + R20s, 25m fast + 25m easy</br>'
+       + '16 x 25m + R10s, odd nuber fast & even numbers easy',
+    distance: 800,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '8 x 50m + R20s, 25m fast + 25m easy</br>'
+       + '16 x 25m + R10s, odd nuber fast & even numbers easy',
+    distance: 800,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'sprint',
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: '4x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
-            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
-            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
-            + '&nbsp;&nbsp; 4e normale freestyle',
+    training_text: '25m-<b>50m</b>-75m-<b>100m</b>-100m-<b>75m</b>-50m-<b>25m</b> + R15s between intervals, fast tempo at bold intervals',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '2 sets of 25m-<b>50m</b>-75m-<b>100m</b>-100m-<b>75m</b>-50m-<b>25m</b> + R15s between intervals, fast tempo at bold intervals',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '3 sets of 25m-<b>50m</b>-75m-<b>100m</b>-100m-<b>75m</b>-50m-<b>25m</b> + R15s between intervals, fast tempo at bold intervals',
+    distance: 1500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '25m-<b>50m</b>-75m-<b>100m</b>-100m-<b>75m</b>-50m-<b>25m</b> + R15s between intervals, fast tempo at bold intervals',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '25m-<b>50m</b>-75m-<b>100m</b>-100m-<b>75m</b>-50m-<b>25m</b>-25m-<b>50m</b>-75m-<b>100m</b> + R15s between intervals, fast tempo at bold intervals',
+    distance: 1000,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '25m-<b>50m</b>-75m-<b>100m</b>-100m-<b>75m</b>-50m-<b>25m</b>-25m-<b>50m</b>-75m-<b>100m</b> + R15s between intervals, fast tempo at bold intervals',
+    distance: 1000,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '10 x 50m + R15s, start with 2 x 50m at base SPM, after each 2 x 50m add extra + 3SPM',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '60',
+    training_text: '24 x 50m + R15s, start with 4 x 50m at base SPM, after each 4 x 50m add extra + 3SPM',
     distance: 1200,
   },
   {
     training_part: 'main',
-    training_type: 'openwater',
-    swim_speed: 'intermediate',
-    swim_time: '60',
-    training_text: '6x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
-            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
-            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
-            + '&nbsp;&nbsp; 4e normale freestyle<br>'
-            + '&nbsp;&nbsp; 5e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 6e with fins and head-up sighting ever 9 strokes<br>',
-    distance: 1800,
-  },
-  {
-    training_part: 'main',
-    training_type: 'openwater',
+    training_type: 'sprint',
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: '2x4x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
-            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
-            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
-            + '&nbsp;&nbsp; 4e normale freestyle',
-    distance: 2400,
+    training_text: '30 x 50m + R15s, start with 4 x 50m at base SPM, after each 4 x 50m add extra + 3SPM',
+    distance: 1500,
   },
   {
     training_part: 'main',
-    training_type: 'openwater',
+    training_type: 'sprint',
     swim_speed: 'novice',
     swim_time: '30',
-    training_text: '4x150m freestyle + R30s if possible drafting steadily with a partner where:<br>'
-            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
-            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
-            + '&nbsp;&nbsp; 4e normale freestyle',
+    training_text: '10 x 50m + R15s, start with 2 x 50m at base SPM, after each 2 x 50m add extra + 3SPM',
+    distance: 500,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '15 x 50m + R15s, start with 4 x 50m at base SPM, after each 4 x 50m add extra + 3SPM',
+    distance: 750,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'advanced',
+    swim_time: '30',
+    training_text: '15 x 50m + R15s, start with 4 x 50m at base SPM, after each 4 x 50m add extra + 3SPM',
+    distance: 750,
+  },
+
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'novice',
+    swim_time: '60',
+    training_text: '2 sets of:</br>'
+        + '&nbsp;&nbsp; 2 x 100m + R45s, best pace possible</br>'
+        + '&nbsp;&nbsp; 25m + R45s, 25m + R40s, 25m + R35s, 25m + R90s, all at maximum pace!</br>',
     distance: 600,
   },
   {
     training_part: 'main',
-    training_type: 'openwater',
+    training_type: 'sprint',
     swim_speed: 'intermediate',
-    swim_time: '30',
-    training_text: '6x150m freestyle + R30s if possible drafting steadily with a partner where:<br>'
-            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
-            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
-            + '&nbsp;&nbsp; 4e normale freestyle<br>'
-            + '&nbsp;&nbsp; 5e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 6e with fins and head-up sighting ever 9 strokes<br>',
-    distance: 900,
+    swim_time: '60',
+    training_text: '2 sets of:</br>'
+        + '&nbsp;&nbsp; 3 x 100m + R45s, best pace possible</br>'
+        + '&nbsp;&nbsp; 50m + R55s, 50m + R50s, 50m + R45s, 50m + R100s, all at maximum pace!</br>',
+    distance: 1000,
   },
   {
     training_part: 'main',
-    training_type: 'openwater',
+    training_type: 'sprint',
+    swim_speed: 'advanced',
+    swim_time: '60',
+    training_text: '2 sets of:</br>'
+        + '&nbsp;&nbsp; 3 x 200m + R45s, best pace possible</br>'
+        + '&nbsp;&nbsp; 50m + R55s, 50m + R50s, 50m + R45s, 50m + R100s, all at maximum pace!</br>',
+    distance: 1600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'novice',
+    swim_time: '30',
+    training_text: '2 sets of:</br>'
+        + '&nbsp;&nbsp; 100m + R45s, best pace possible</br>'
+        + '&nbsp;&nbsp; 25m + R45s, 25m + R40s, 25m + R35s, 25m + R90s, all at maximum pace!</br>',
+    distance: 400,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
+    swim_speed: 'intermediate',
+    swim_time: '30',
+    training_text: '2 sets of:</br>'
+        + '&nbsp;&nbsp; 100m + R45s, best pace possible</br>'
+        + '&nbsp;&nbsp; 50m + R55s, 50m + R50s, 50m + R45s, 50m + R100s, all at maximum pace!</br>',
+    distance: 600,
+  },
+  {
+    training_part: 'main',
+    training_type: 'sprint',
     swim_speed: 'advanced',
     swim_time: '30',
-    training_text: '4x300m freestyle + R30s if possible drafting steadily with a partner where:<br>'
-            + '&nbsp;&nbsp; 1e with fins, long and smooth<br>'
-            + '&nbsp;&nbsp; 2e with fins and head-up sighting ever 9 strokes<br>'
-            + '&nbsp;&nbsp; 3e with pull buoy, breathing to least favorite side<br>'
-            + '&nbsp;&nbsp; 4e normale freestyle',
-    distance: 1200,
+    training_text: '2 sets of:</br>'
+        + '&nbsp;&nbsp; 2 x 100m + R45s, best pace possible</br>'
+        + '&nbsp;&nbsp; 50m + R55s, 50m + R50s, 50m + R45s, 50m + R100s, all at maximum pace!',
+    distance: 800,
   },
 
   {
