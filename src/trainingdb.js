@@ -781,7 +781,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     swim_speed: 'novice',
     swim_time: '60',
     training_text: '3 x (5 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
-      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m right side kick<br>'
       + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
       + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
     distance: 750,
@@ -792,7 +792,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     swim_speed: 'intermediate',
     swim_time: '60',
     training_text: '3 x (7 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
-      + '&nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + '&nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m right side kick<br>'
       + '&nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
       + '&nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
     distance: 1050,
@@ -803,7 +803,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     swim_speed: 'advanced',
     swim_time: '60',
     training_text: '3 x (10 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
-      + '&nbsp;&nbsp;1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + '&nbsp;&nbsp;1st set: with fins, 25m left side kick, 25m right side kick<br>'
       + '&nbsp;&nbsp;2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
       + '&nbsp;&nbsp;3th set: 10m scull#1, 10m scull#2, 30m freestyle',
     distance: 1500,
@@ -814,7 +814,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     swim_speed: 'novice',
     swim_time: '30',
     training_text: '3 x (3 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
-      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m right side kick<br>'
       + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
       + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
     distance: 450,
@@ -825,7 +825,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     swim_speed: 'intermediate',
     swim_time: '60',
     training_text: '3 x (4 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
-      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m right side kick<br>'
       + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
       + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
     distance: 600,
@@ -836,7 +836,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     swim_speed: 'advanced',
     swim_time: '30',
     training_text: '3 x (5 x 50m + R15s), even numbers = drills, odd numbers = 25m freestyle fast, 25m freestyle easy, where:<br>'
-      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m ride side kick<br>'
+      + ' &nbsp;&nbsp; 1st set: with fins, 25m left side kick, 25m right side kick<br>'
       + ' &nbsp;&nbsp; 2nd set: with fins, 25m 6/3/6, 25m freestyle<br>'
       + ' &nbsp;&nbsp; 3th set: 10m scull#1, 10m scull#2, 30m freestyle',
     distance: 750,
@@ -847,36 +847,36 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_type: 'technique',
     swim_speed: 'novice',
     swim_time: '60',
-    training_text: '6 x 150m + R20s - Focus on stoke rate, where:<br>'
+    training_text: '4 x 150m + R20s - Focus on stroke rate, where:<br>'
       + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
       + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
       + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
       + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM',
-    distance: 900,
+    distance: 600,
   },
   {
     training_part: 'main',
     training_type: 'technique',
     swim_speed: 'intermediate',
     swim_time: '60',
-    training_text: '6 x 200m + R20s - Focus on stoke rate, where:<br>'
+    training_text: '4 x 200m + R20s - Focus on stroke rate, where:<br>'
       + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
       + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
       + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
       + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM',
-    distance: 1200,
+    distance: 800,
   },
   {
     training_part: 'main',
     training_type: 'technique',
     swim_speed: 'advanced',
     swim_time: '60',
-    training_text: '6 x 250m + R20s - Focus on stoke rate, where:<br>'
+    training_text: '4 x 250m + R20s - Focus on stroke rate, where:<br>'
       + '&nbsp;&nbsp; 1st: basic stroke rate<br>'
       + '&nbsp;&nbsp; 2nd: basic stroke rate + 5 SPM<br>'
       + '&nbsp;&nbsp; 3th: basic stroke rate - 5 SPM<br>'
       + '&nbsp;&nbsp; 4th: basic stroke rate + 3 SPM',
-    distance: 1500,
+    distance: 1000,
   },
   {
     training_part: 'main',
