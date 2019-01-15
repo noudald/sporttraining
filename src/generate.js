@@ -88,7 +88,7 @@ function get_css_calculator(swimSpeed) {
         + ' sec: <input type="text" id="sec200m" value=""/></br>'
         + ' 400m min: <input type="text" id="min400m" value=""/>'
         + ' sec: <input type="text" id="sec400m" value=""/></p>'
-        + '<p><button onclick="computeCSSNovice()" id="computeCSSButton">Compute CSS</button></p>';
+        + '<p><button onclick="computeCSSNoNovice()" id="computeCSSButton">Compute CSS</button></p>';
   }
   cssString += '<p><div id="CSSSpeed"></div></p>';
   cssString += '</p>';
