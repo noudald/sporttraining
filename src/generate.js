@@ -12,6 +12,89 @@ function get_disclaimer() {
   return '<p>The information contained in this generated swim workout is for informational purposes only, and is made available to you as a self-help tool for your own use.</p>';
 }
 
+function isInteger(value) {
+  return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
+}
+
+function computeCSS(seconds200m, seconds400m) {
+  CSSMetersPerSecond = 200.0 / (seconds400m - seconds200m);
+  return 100.0 / CSSMetersPerSecond;
+}
+
+function computeCSSNovice() {
+  let min200m = document.getElementById('min200m').value;
+  let sec200m = document.getElementById('sec200m').value;
+
+  if (!isInteger(min200m) || !isInteger(sec200m) || min200m < 0 || sec200m < 0 || sec200m > 59) {
+    alert('Invalid input, make sure the minutes and seconds are correct!');
+    return;
+  }
+
+  min200m = Number(min200m);
+  sec200m = Number(sec200m);
+
+  // For a novice swimmer we assume the 400m time is 2 * 200m time + 10 seconds.
+  const totalSeconds200m = 60 * min200m + sec200m;
+  const totalSeconds400m = 2 * totalSeconds200m + 10;
+
+  const CSSSeconds = computeCSS(totalSeconds200m, totalSeconds400m);
+  const CSSSec = Math.floor(CSSSeconds % 60);
+  const CSSMin = Math.floor(CSSSeconds / 60);
+
+  $('#CSSSpeed').promise().done(() => {
+    $('#CSSSpeed').html(`Your CSS Speed is ${CSSMin}:${String(CSSSec).padStart(2, '0')} min / 100m`);
+  });
+}
+
+function computeCSSNoNovice() {
+  let min200m = document.getElementById('min200m').value;
+  let sec200m = document.getElementById('sec200m').value;
+  let min400m = document.getElementById('min400m').value;
+  let sec400m = document.getElementById('sec400m').value;
+
+  if (!isInteger(min200m) || !isInteger(sec200m) || min200m < 0 || sec200m < 0 || sec200m > 59
+      || !isInteger(min400m) || !isInteger(sec400m) || min400m < 0 || sec400 < 0 || sec400 > 59) {
+    alert('Invalid input, make sure the minutes and seconds are correct!');
+    return;
+  }
+
+  min200m = Number(min200m);
+  sec200m = Number(sec200m);
+  const totalSeconds200m = 60 * min200m + sec200m;
+
+  min400m = Number(min400m);
+  sec400m = Number(sec400m);
+  const totalSeconds400m = 60 * min400m + sec400m;
+
+  const CSSSeconds = computeCSS(totalSeconds200m, totalSeconds400m);
+  const CSSSec = Math.floor(CSSSeconds % 60);
+  const CSSMin = Math.floor(CSSSeconds / 60);
+
+  $('#CSSSpeed').promise().done(() => {
+    $('#CSSSpeed').html(`Your CSS Speed is ${CSSMin}:${String(CSSSec).padStart(2, '0')} min / 100m`);
+  });
+}
+
+function get_css_calculator(swimSpeed) {
+  let cssString = '<p><h3>CSS calculator</h3>';
+  if (swimSpeed == 'novice') {
+    cssString += 'Insert the recorded 200m time and press the <i>Compute CSS</i> button to compute your CSS.';
+    cssString += '<p>200m min: <input type="text" id="min200m" value=""/>'
+        + ' sec: <input type="text" id="sec200m" value=""/></p>'
+        + '<p><button onclick="computeCSSNovice()" id="computeCSSButton">Compute CSS</button></p>';
+  } else {
+    cssString += 'Insert the recorded 200m and 400m time and press the <i>Compute CSS</i> button to compute your CSS.</br>';
+    cssString += '<p>200m min: <input type="text" id="min200m" value=""/>'
+        + ' sec: <input type="text" id="sec200m" value=""/></br>'
+        + ' 400m min: <input type="text" id="min400m" value=""/>'
+        + ' sec: <input type="text" id="sec400m" value=""/></p>'
+        + '<p><button onclick="computeCSSNovice()" id="computeCSSButton">Compute CSS</button></p>';
+  }
+  cssString += '<p><div id="CSSSpeed"></div></p>';
+  cssString += '</p>';
+  return cssString;
+}
+
 function generateTraining(swimType, swimSpeed, swimTime) {
   let totalDistance = 0;
   let warmingUp = null;
@@ -43,10 +126,9 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     const cssTest = data.get()[0];
     warmingUp = cssTest.warming_up_text;
     build = cssTest.build_text;
-    main = cssTest.main_text;
+    main = cssTest.main_text + get_css_calculator(swimSpeed);
     coolingDown = cssTest.cooling_down_text;
     totalDistance += cssTest.distance;
-
   } else {
     if (swimSpeed && swimTime) {
       const data = trainingdb({
