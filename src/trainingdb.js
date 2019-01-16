@@ -2350,7 +2350,8 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
       + '4 x 25m freestyle, slowly increase speed in each 25m</br>'
       + '100m easy + R60s',
     main_text: 'CSS Test:</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)',
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>. Use 2 x 200m time for your 400m time.',
     cooling_down_text: '200m freestyle easy, with pull buoy',
     distance: 900,
   },
@@ -2367,7 +2368,8 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     main_text: 'CSS Test:</br>'
             + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
             + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)',
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
     cooling_down_text: '200m freestyle easy, with pull buoy',
     distance: 1600,
   },
@@ -2384,7 +2386,8 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     main_text: 'CSS Test:</br>'
             + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
             + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)',
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
     cooling_down_text: '200m freestyle easy, with pull buoy',
     distance: 1800,
   },
@@ -2399,7 +2402,8 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
       + '4 x 25m freestyle, slowly increase speed in each 25m</br>'
       + '100m easy + R60s',
     main_text: 'CSS Test:</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)',
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>. Use 2 x 200m time for your 400m time.',
     cooling_down_text: '200m freestyle easy + R60s, with pull buoy</br>'
       + '900m easy',
     distance: 2400,
@@ -2417,7 +2421,8 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     main_text: 'CSS Test:</br>'
             + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
             + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)',
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
     cooling_down_text: '200m freestyle easy + R60s, with pull buoy</br>'
       + '400m easy',
     distance: 2000,
@@ -2435,7 +2440,8 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     main_text: 'CSS Test:</br>'
             + '&nbsp;&nbsp; 400m Time Trial (record your time)</br>'
             + '&nbsp;&nbsp; 4 x 50m easy + R20s</br>'
-            + '&nbsp;&nbsp; 200m Time Trial (record your time)',
+            + '&nbsp;&nbsp; 200m Time Trial (record your time)</br></br>'
+            + 'Calculate your CSS at <a href="http://www.swimsmooth.com/improve/intermediate/swim-smooth-css-calculator">Swim Smooth CSS calculator</a>',
     cooling_down_text: '200m freestyle easy + R60s, with pull buoy</br>'
       + '2 x 200m easy + R60s</br>'
       + '400m easy',
