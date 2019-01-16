@@ -12,6 +12,10 @@ function get_disclaimer() {
   return '<p>The information contained in this generated swim workout is for informational purposes only, and is made available to you as a self-help tool for your own use.</p>';
 }
 
+function get_drills_sheet() {
+  return '<p>Most drills in these workouts are explained in the <a href="http://swimsmooth.com/pauls_images/drills.pdf">Swim Smooth drill cheat sheet</a>, or can be found on <a href="https://www.youtube.com/playlist?list=PLYcon0_LG98B3sqLTSWzy7DOV7aJkZ8R_">YouTube</a>.</p>';
+}
+
 function generateTraining(swimType, swimSpeed, swimTime) {
   let totalDistance = 0;
   let warmingUp = null;
@@ -72,6 +76,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
       totalDistance = enduranceTraining.distance;
       trainingText += `<p>${enduranceTraining.training_text}</p>`;
       trainingText += `<b>Total distance:</b> ${totalDistance}`;
+      trainingText += get_drills_sheet();
       trainingText += get_disclaimer();
       return trainingText;
     }
@@ -144,6 +149,7 @@ function generateTraining(swimType, swimSpeed, swimTime) {
     trainingText += `<b>Total distance:</b> ${totalDistance}`;
   }
 
+  trainingText += get_drills_sheet();
   trainingText += get_disclaimer();
 
   return trainingText;
