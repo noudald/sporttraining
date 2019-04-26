@@ -85,7 +85,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: 'set 1: 100m easy freestyle + R10s<br>'
       + '&nbsp;&nbsp; 2 x 50m with pull buoy - focus on catch + R10s<br>'
       + '&nbsp;&nbsp; 4 x 25m freestyle as odd# fast and even# easy + R5s<br>'
-      + 'set 2: freestyle fins breathing each 5 strokes + R10s<br>'
+      + 'set 2: 100m freestyle with fins breathing each 5 strokes + R10s<br>'
       + '&nbsp;&nbsp; 2 x 50m torpedo kick, alternating front and back + R10s<br>'
       + '&nbsp;&nbsp; 4 x 25m, where breath each 1) 3 strokes 2) 5 strokes 3) 7 strokes 4) 3 strokes + R5',
     distance: 600,
@@ -98,7 +98,7 @@ const trainingdb = TAFFY([ // eslint-disable-line no-unused-vars,no-undef
     training_text: 'set 1: 100m easy freestyle + R10s<br>'
       + '&nbsp;&nbsp; 2 x 50m with pull buoy - focus on catch + R10s<br>'
       + '&nbsp;&nbsp; 4 x 25m freestyle as odd# fast and even# easy + R5s<br>'
-      + 'set 2: freestyle fins breathing each 5 strokes + R10s<br>'
+      + 'set 2: 100m freestyle with fins breathing each 5 strokes + R10s<br>'
       + '&nbsp;&nbsp; 2 x 50m torpedo kick, alternating front and back + R10s<br>'
       + '&nbsp;&nbsp; 4 x 25m, where breath each 1) 3 strokes 2) 5 strokes 3) 7 strokes 4) 3 strokes + R5<br>'
       + 'set 3: 100m freestyle, nice and smooth + R10s<br>'
