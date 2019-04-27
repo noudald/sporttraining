@@ -1,0 +1,59 @@
+<html>
+
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://unpkg.com/mathjs@5.9.0/dist/math.min.js"></script>
+    </head>
+
+    <body>
+        <div id="strokeSpeedDiv" style="width:800px"></div>
+        <script>
+            const x1 = [60, 65, 55, 63, 80];
+            const y1 = [110, 106, 113, 105, 95];
+            // const y1 = [104, 102, 109, 95];
+
+            const measurements = {
+                x: x1,
+                y: y1,
+                mode: 'markers',
+                type: 'scatter',
+                name: 'Measured speed'
+            };
+
+
+            /* Mean square root regression for a polynomial up to n powers. */
+            const n_power = 2;
+            const X = math.matrix(x1.map((e) => [...Array(n_power + 1).keys()].map(i => Math.pow(e, i))));
+            const Y = math.matrix(y1.map((e) => [e]));
+            const B = math.multiply(
+                math.inv(math.multiply(math.transpose(X), X)),
+                math.multiply(math.transpose(X), Y));
+
+            function quadratic_fit(x) {
+                return B.toArray().map((b, i) => b * Math.pow(x, i)).reduce((p, c) => p + c);
+            }
+
+            const x1_fit = [...Array(50).keys()].map(i => i + 50);
+            const y1_fit = x1_fit.map(quadratic_fit);
+
+            const fit = {
+                x: x1_fit,
+                y: y1_fit,
+                mode: 'lines',
+                type: 'scatter',
+                name: 'Approximated speed'
+            };
+
+            const data = [measurements, fit];
+
+            const layout = {
+                title: "Strokes per minute vs Speed",
+                xaxis: {title: "Strokes per minute (SPM)"},
+                yaxis: {title: "Speed (sec / 100m)"}
+            };
+
+            Plotly.newPlot('strokeSpeedDiv', data, layout);
+        </script>
+    </body>
+
+</html>
